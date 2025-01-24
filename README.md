@@ -4,9 +4,11 @@ ______________________________________________________________________
 
 ### About
 
-Nouma Arquitetura is a small architecture firm that specializes in residential projects, and the scope of this project is to make a simple website that contains the presentation of their organization, the four main projects from their library, and their contact info.
+Nouma Arquitetura is a small architecture firm that specializes in residential designs, and the scope of this project is to make a simple website that contains the presentation of their organization, the four main projects from their library, and their contact info.
 
 The main request for this project is for it to follow the same minimalist-modern style of their own aesthetics and maintain a functional and intuitive UI while adding subtle elements of color and warmth.
+
+https://noumaarquitetura.netlify.app/
 
 ### Technologies and languages used:
 
