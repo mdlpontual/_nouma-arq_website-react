@@ -1,16 +1,24 @@
 import React from 'react'
+import IMG from './assets/imagesHUB'
 
 function App() {
   return (
     <>
-      <div className='container'>
-        <div className='row'>
-          <h1 className='col-3'>col-test</h1>
-          <h1 className='col-3'>col-test</h1>
-          <h1 className='col-1'>yo...</h1>
-          <h2 className='col btn btn-primary'>button-test</h2>
+      <div id="cont" className='container-fluid'>
+        <div id="row-logo" className='row'>
+          <div id="logo" className='col d-flex justify-content-center align-items-end'>
+            <img src={IMG.noumaBlackFullLogoPNG} />
+          </div>
         </div>
-      </div>  
+        <div id="row-text" className='row'>
+          <div id="text" className='col d-flex justify-content-center align-items-center'>
+            <div>
+              <h1>Site em Construção...</h1>
+              <h4>(Under Construction)</h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
