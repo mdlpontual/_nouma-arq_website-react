@@ -4,18 +4,17 @@ import IMG from './assets/imagesHUB'
 function App() {
   return (
     <>
-      <div id="cont" className='container-fluid'>
-        <div id="row-logo" className='row'>
-          <div id="logo" className='col d-flex justify-content-center align-items-end'>
-            <img src={IMG.noumaBlackFullLogoPNG} />
+      <div id="aaa" className="container-fluid">
+        <div id="bbb" className="row">
+          <div id="ccc" className="col">
+            <h1>text</h1>
+            <h1>text</h1>
+            <h1>text</h1>
           </div>
-        </div>
-        <div id="row-text" className='row'>
-          <div id="text" className='col d-flex justify-content-center align-items-center'>
-            <div>
-              <h1>Site em Construção...</h1>
-              <h4>(Under Construction)</h4>
-            </div>
+          <div id="ddd" className="col">
+            <h1>text</h1>
+            <h1>text</h1>
+            <h1>text</h1>
           </div>
         </div>
       </div>
