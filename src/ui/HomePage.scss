@@ -1,0 +1,6 @@
+@use "../scss" as *;
+
+#test-container {
+    border: $gb-row-solid;
+    height: 100vh;
+}

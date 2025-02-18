@@ -3,7 +3,9 @@ import React from "react";
 function HomePage() {
   return (
     <>
-      <h1>asdasd</h1>
+      <div id="test-container" className="container-fluid">
+        <h1>Welcome to the Home Page</h1>
+      </div>
     </>
   )
 }
