@@ -1,4 +1,16 @@
 const IMG = {
+    noumaCard: new URL('./IMG/00_NOUMA/NOUMA CARTÃO QR R00.png', import.meta.url).href,
+    tessSymbol_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/tessSymbol_white.png', import.meta.url).href,
+    tessSymbol_black: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/tessSymbol_black.png', import.meta.url).href,
+    nouma_fullLogo_black: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Preto/Logo Preta.png', import.meta.url).href,
+    nouma_onlyName_black: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Preto/Nome Preto.png', import.meta.url).href,
+    nouma_lineName_black: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Preto/Nome Horizontal Preto.png', import.meta.url).href,
+    nouma_onlySymbol_black: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Preto/Simbolo Preto.png', import.meta.url).href,
+    nouma_fullLogo_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Branco/Logo Branca.png', import.meta.url).href,
+    nouma_onlyName_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Branco/Nome Branco.png', import.meta.url).href,
+    nouma_lineName_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Branco/Nome Horizontal Branco.png', import.meta.url).href,
+    nouma_onlySymbol_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Branco/Simbolo Branco.png', import.meta.url).href,
+
     jumbotron_00: new URL('./IMG/cover/JUMBO_00.jpg', import.meta.url).href,
     jumbotron_01: new URL('./IMG/cover/JUMBO_01.jpg', import.meta.url).href,
     jumbotron_02: new URL('./IMG/cover/JUMBO_02.jpg', import.meta.url).href,
@@ -97,6 +109,10 @@ const IMG = {
     serrambi_16: new URL('./IMG/SERRAMBI/select/SERRAMBI_16.jpg', import.meta.url).href,
     serrambi_17: new URL('./IMG/SERRAMBI/select/SERRAMBI_17.jpg', import.meta.url).href,
     serrambi_18: new URL('./IMG/SERRAMBI/select/SERRAMBI_18.jpg', import.meta.url).href,
+
+    phoneIcon: new URL('./IMG/call.png', import.meta.url).href,
+    letterIcon: new URL('./IMG/letter.png', import.meta.url).href,
+    placeIcon: new URL('./IMG/maps-and-flags.png', import.meta.url).href,
 }
 
 export default IMG; 
