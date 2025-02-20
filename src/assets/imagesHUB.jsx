@@ -10,6 +10,10 @@ const IMG = {
     nouma_onlyName_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Branco/Nome Branco.png', import.meta.url).href,
     nouma_lineName_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Branco/Nome Horizontal Branco.png', import.meta.url).href,
     nouma_onlySymbol_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Branco/Simbolo Branco.png', import.meta.url).href,
+    nouma_fullLogo_green: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Verde/Logo verde.png', import.meta.url).href,
+    nouma_onlyName_green: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Verde/Nome verde.png', import.meta.url).href,
+    nouma_lineName_green: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Verde/Nome Horizontal verde.png', import.meta.url).href,
+    nouma_onlySymbol_green: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Verde/Simbolo verde.png', import.meta.url).href,
 
     jumbotron_00: new URL('./IMG/cover/JUMBO_00.jpg', import.meta.url).href,
     jumbotron_01: new URL('./IMG/cover/JUMBO_01.jpg', import.meta.url).href,

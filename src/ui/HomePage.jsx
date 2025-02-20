@@ -12,6 +12,7 @@ const jumboIMG = [
 
 function HomePage() {
   const [currentIMG, setCurrentIMG] = useState(jumboIMG[0]);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,12 +26,18 @@ function HomePage() {
     <>
       <div id="jumboCon" className="container-fluid" style={{backgroundImage: `url(${currentIMG})`}}>
         <div id="jumboFrame" className="row">
-          <div id="jumboInnerFrame" className="col">
+          <div id="jumboInnerFrame" className={`col ${isHovered ? "hovered-border" : ""}`}></div>
+          <div id="jumboInnerLogo" className="col">
             <div id="symbRow" className="row">
-              <img id="nomaSymbolWhite" className="col-auto" src={IMG.nouma_onlySymbol_white} alt="nouma symbol and menu button" />
+              <img id="nomaSymbol" 
+                   className="col-auto" 
+                   src={!isHovered ? IMG.nouma_onlySymbol_white : IMG.nouma_onlySymbol_green} 
+                   onMouseEnter={() => setIsHovered(true)}
+                   onMouseLeave={() => setIsHovered(false)}
+                   alt="nouma symbol and menu button" />
             </div>
             <div id="nameRow" className="row">
-              <img id="nomaNameWhite" className="col-auto" src={IMG.nouma_lineName_white} alt="nouma name" />
+              <img id="nomaName" className="col-auto" src={IMG.nouma_lineName_white} alt="nouma name" />
             </div>
           </div>
         </div>
