@@ -1,1 +1,47 @@
 @use "../scss" as *;
+
+#jumboCon {
+    @include box-reset-default;
+    //border: $gb-con_5-sol-red;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    transition: background-image 2s ease-in-out;
+    transition-delay: 1s;
+    height: 100vh;
+    #jumboFrame {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 100%;
+        #jumboInnerFrame {
+            @include box-reset-default;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin: 30px;
+            #symbRow {
+                @include box-reset-default;
+                //border: $gb-row_2-dsh-ylw;
+                height: 50%;
+                #nomaSymbolWhite {
+                    @include box-reset-default;
+                    //border: $gb-col_2-dsh-cyn;
+                    height: 100px;
+                    margin: 20px;
+                }
+            }
+            #nameRow {
+                @include box-reset-default;
+                //border: $gb-row_2-dsh-ylw;
+                height: 50%;
+                align-content: end;
+                justify-content: end;
+                #nomaNameWhite {
+                    @include box-reset-default;
+                    //border: $gb-col_2-dsh-cyn;
+                    height: 100px;
+                    margin: 20px;
+                }
+            }
+        }
+    }
+}
