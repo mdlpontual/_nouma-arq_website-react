@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../assets/imagesHUB";
 
-function Menu() {
+function Menu({ setIsMenuOpen }) {
     return (
         <>
             <div id="menuInnerFrame" className="col"></div>
@@ -10,6 +10,7 @@ function Menu() {
                     <img id="menuNomaSymbol" 
                         className="col-auto btn" 
                         src={IMG.nouma_onlySymbol_black} 
+                        onClick={() => setIsMenuOpen(false)}
                         alt="nouma symbol and menu button" />
                 </div>
             </div>

@@ -26,9 +26,9 @@ function HomePage() {
   return (
     <>
       <header id="jumboCon" className="container-fluid" style={{backgroundImage: `url(${currentIMG})`}}>
-        {<menu id="menu" className="row">
-          <Menu />
-        </menu>}
+        <menu id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
+          {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
+        </menu>
         <div id="jumboFrame" className="row">
           <div id="jumboInnerFrame" className={`col ${isHovered ? "hovered-border" : ""}`}></div>
           <div id="jumboInnerLogo" className="col">
@@ -38,6 +38,7 @@ function HomePage() {
                   src={!isHovered ? IMG.nouma_onlySymbol_white : IMG.nouma_onlySymbol_green} 
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
+                  onClick={() => setIsMenuOpen(true)}
                   alt="nouma symbol and menu button" />
             </div>
             <div id="nameRow" className="row">
