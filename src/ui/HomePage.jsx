@@ -11,12 +11,12 @@ const jumboIMG = [
 ];
 
 function HomePage() {
-  const [currentIMG, setCurrentIMG] = useState(jumboIMG[4]);
+  const [currentIMG, setCurrentIMG] = useState(jumboIMG[0]);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIMG(jumboIMG[Math.floor(Math.random() * jumboIMG.length)]);
-    }, 60000);
+    }, 15000);
 
     return () => clearInterval(interval);
   }, []);

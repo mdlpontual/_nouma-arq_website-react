@@ -9,10 +9,21 @@
     transition: background-image 2s ease-in-out;
     transition-delay: 1s;
     height: 100vh;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2); 
+    }
     #jumboFrame {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: 100%;
+        position: relative;
+        z-index: 2;
         #jumboInnerFrame {
             @include box-reset-default;
             border: 2px solid white;
@@ -26,7 +37,7 @@
                     @include box-reset-default;
                     //border: $gb-col_2-dsh-cyn;
                     height: 100px;
-                    margin: 20px;
+                    margin: 25px;
                 }
             }
             #nameRow {
@@ -39,7 +50,7 @@
                     @include box-reset-default;
                     //border: $gb-col_2-dsh-cyn;
                     height: 100px;
-                    margin: 20px;
+                    margin: 20px 27px 20px 20px;
                 }
             }
         }
