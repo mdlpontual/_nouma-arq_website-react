@@ -9,6 +9,7 @@
     transition: background-image 2s ease-in-out;
     transition-delay: 1s;
     height: 100vh;
+    position: relative;
     &::before {
         content: "";
         position: absolute;
@@ -29,8 +30,8 @@
             border: 3px solid white;
             border-radius: 10px;
             margin: 30px;
-            transition: border-color 0.5s linear;
-            clip-path: polygon(65px 0, 100% 0, 100% 100%, 0 100%, 0 145px);
+            transition: border-color 0.3s linear;
+            clip-path: polygon(70px 0, 100% 0, 100% 100%, 0 100%, 0 155px);
         }
         .hovered-border {
             border-color: rgba(229, 255, 0, 1) !important;
@@ -48,7 +49,11 @@
                 #nomaSymbol {
                     @include box-reset-default;
                     //border: $gb-col_2-dsh-cyn;
-                    height: 130px;
+                    height: 150px;
+                    padding: 5px;
+                    position: relative;
+                    top: -7px;
+                    left: -7px;
                     cursor: pointer;
                 }
             }

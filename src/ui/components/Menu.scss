@@ -1,0 +1,41 @@
+@use "../../scss" as *;
+
+#menu {
+    @include box-reset-default;
+    //border: $gb-row_5-sol-org;
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(229, 255, 0, 1);
+    #menuInnerFrame {
+        @include box-reset-default;
+        border: 3px solid black;
+        border-right: none;
+        border-radius: 10px 0 0 10px;
+        margin: 30px 0 30px 30px;
+        clip-path: polygon(70px 0, 100% 0, 100% 100%, 0 100%, 0 155px);
+    }
+    #menuCol {
+        @include box-reset-default;
+        //border: $gb-col_5-sol-cyn;
+        position: absolute;
+        height: 100%;
+        #menuSymb {
+            @include box-reset-default;
+            //border: $gb-row_2-dsh-org;
+            height: 50%;
+            margin: 30px 30px -30px 30px;
+            #menuNomaSymbol {
+                @include box-reset-default;
+                //border: $gb-col_2-dsh-cyn;
+                height: 150px;
+                padding: 5px;
+                position: relative;
+                top: -7px;
+                left: -7px;
+                cursor: pointer;
+            }
+        }
+    }
+}
