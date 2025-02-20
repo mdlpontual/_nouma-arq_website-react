@@ -30,7 +30,7 @@ function HomePage() {
           {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
         </menu>
         <div id="jumboFrame" className="row">
-          <div id="jumboInnerFrame" className={`col ${isHovered ? "hovered-border" : ""}`}></div>
+          <div id="jumboInnerFrame" className={`col ${isHovered || isMenuOpen ? "hovered-border" : ""}`}></div>
           <div id="jumboInnerLogo" className="col">
             <div id="symbRow" className="row">
               <img id="nomaSymbol" 
