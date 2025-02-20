@@ -4,11 +4,11 @@
     @include box-reset-default;
     //border: $gb-row_5-sol-org;
     height: 100%;
-    width: 40%;
+    width: 35%;
     position: absolute;
     z-index: 3;
     background-color: rgba(229, 255, 0, 1);
-    transition: width 1s ease-in-out;
+    transition: width 0.5s ease-in-out;
     #menuInnerFrame {
         @include box-reset-default;
         border: 3px solid black;
@@ -42,41 +42,13 @@
 }
 #menuClosed {
     @include box-reset-default;
+    //border: $gb-row_5-sol-org;
     width: 0%; 
     height: 100%;
     position: absolute;
     z-index: 3;
     background-color: rgba(229, 255, 0, 1);
-    transition: width 0.75s ease-in-out 0.25s;
+    background-color: rgb(58, 58, 58);
+    transition: width 0.5s ease-in-out 0.25s, background-color 0.25s linear;
     overflow: hidden; 
-    #menuInnerFrame {
-        @include box-reset-default;
-        border: 3px solid black;
-        border-right: none;
-        border-radius: 10px 0 0 10px;
-        margin: 30px 0 30px 30px;
-        clip-path: polygon(70px 0, 100% 0, 100% 100%, 0 100%, 0 155px);
-    }
-    #menuCol {
-        @include box-reset-default;
-        //border: $gb-col_5-sol-cyn;
-        position: absolute;
-        height: 100%;
-        #menuSymb {
-            @include box-reset-default;
-            //border: $gb-row_2-dsh-org;
-            height: 50%;
-            margin: 30px 30px -30px 30px;
-            #menuNomaSymbol {
-                @include box-reset-default;
-                //border: $gb-col_2-dsh-cyn;
-                height: 150px;
-                padding: 5px;
-                position: relative;
-                top: -7px;
-                left: -7px;
-                cursor: pointer;
-            }
-        }
-    }
 }
