@@ -1,0 +1,43 @@
+@use "../../../scss" as *;
+
+#projectsCon {
+    @include box-reset-default;
+    //border: $gb-con_5-sol-red;
+    height: 100vh;
+    #projTitleRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 60%;
+        background-color: $pastelBlue;
+        border-bottom: 3px solid $cyberGreen;
+        align-content: end;
+        padding: 0 0 25px 25px;
+        #projTitle {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            font-size: 7rem;
+            -webkit-text-stroke: 1.2px white;
+        }
+    }
+    #cardsRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 40%;
+        #dummyCard {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            padding: 15px;
+            #card {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                border: 1px solid grey;
+                border-radius: 20px;
+                height: 100%;
+                padding: 15px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

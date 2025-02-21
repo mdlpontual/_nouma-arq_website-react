@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import IMG from "../assets/imagesHUB";
 import Jumbtron from "./components/jumbotron/Jumbotron";
 import About from "./components/about/About";
+import Projetos from "./components/projects/Projetos";
 
 function HomePage() {
   return (
@@ -11,6 +12,7 @@ function HomePage() {
       </header>
       <body>
         <About />
+        <Projetos />
       </body>
     </>
   )

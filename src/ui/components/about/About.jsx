@@ -16,7 +16,7 @@ function About() {
                             arquitetura em contexto
                         </h3>
                         <p id="text">
-                        A NOUMA é um pequeno escritório de arquitetura de Pernambuco, Brasil, especializado em projetos residenciais e design de interiores. 
+                            A NOUMA é um pequeno escritório de arquitetura de Pernambuco, Brasil, especializado em projetos residenciais e design de interiores. 
                             Nossa missão é transformar os sonhos das famílias em realidade, convertendo problemas em soluções. 
                             <br/>
                             Nosso objetivo em cada projeto é alcançar a função e a estética ideais, indo além da terceira dimensão. Gostamos de chamar isso de o "template do Tesseract", 
