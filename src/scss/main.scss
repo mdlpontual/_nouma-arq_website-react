@@ -1,9 +1,7 @@
 @use "../ui/HomePage.scss";
-@use "../ui/components/Menu.scss";
-@use "../ui/projects/404/Apt404.scss";
-@use "../ui/projects/aurora/Aurora1602.scss";
-@use "../ui/projects/paiva/CasPaiva.scss";
-@use "../ui/projects/serrambi/SerrambiFlats.scss";
+@use "../ui//components/jumbotron/Jumbotron.scss";
+@use "../ui/components/jumbotron/menu/Menu.scss";
+@use "../ui/components/about/About.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 

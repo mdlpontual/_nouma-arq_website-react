@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import IMG from "../../assets/imagesHUB";
+import IMG from "../../../../assets/imagesHUB";
 
 function Menu({ setIsMenuOpen }) {
     useEffect(() => {

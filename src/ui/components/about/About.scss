@@ -1,0 +1,46 @@
+@use "../../../scss" as *;
+
+#aboutCon {
+    @include box-reset-default;
+    //border: $gb-con_5-sol-red;
+    height: 200vh;
+    #mainLogoRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 50%;
+        align-content: center;
+        justify-content: center;
+        #fullLogoCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            #fullLogo {
+                @include box-reset-default;
+                //border: $gb-elm_5-dsh-lgr;
+                height: 250px;
+            }
+        }
+    }
+    #aboutTextRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 50%;
+        background-color: $pastelBlue;
+        border-top: 5px solid $cyberGreen;
+        align-content: center;
+        justify-content: center;
+        padding: 20%;
+        #textCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            h3 {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            p {
+                font-family: Helvetica, sans-serif;
+                font-weight: 400;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
