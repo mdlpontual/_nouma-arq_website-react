@@ -24,18 +24,86 @@
         height: 100%;
         #menuSymb {
             @include box-reset-default;
-            //border: $gb-row_2-dsh-org;
-            height: 50%;
+            //border: $gb-row_5-dsh-org;
+            height: fit-content;
             margin: 30px 30px -30px 30px;
             #menuNomaSymbol {
                 @include box-reset-default;
-                //border: $gb-col_2-dsh-cyn;
+                //border: $gb-col_5-dsh-cyn;
                 height: 150px;
                 padding: 5px;
                 position: relative;
                 top: -7px;
                 left: -7px;
                 cursor: pointer;
+            }
+        }
+        #menuNav {
+            @include box-reset-default;
+            //border: $gb-row_5-dsh-org;
+            height: fit-content;
+            margin: 30px 30px -30px 30px;
+            overflow: hidden;
+            text-wrap: nowrap;
+            -webkit-text-stroke: 1.2px black;
+            #menuList {
+                @include box-reset-default;
+                //border: $gb-col_2-dsh-cyn;
+                list-style: none;
+                padding: 25px 0 0 15px;
+                li {
+                    @include box-reset-default;
+                    //border: $gb-col_2-dsh-cyn;
+                    h2 {
+                        @include box-reset-default;
+                    }
+                    #projLi {
+                        @include box-reset-default;
+                        padding-left: 25px;
+                    }
+                }
+            }
+            h2:hover {
+                color: rgb(69, 208, 255);
+                cursor: pointer;
+                -webkit-text-stroke: 1.5px rgb(69, 208, 255);
+                transition: color 0.2s ease-in-out;
+            }
+        }
+        #menuFooter {
+            @include box-reset-default;
+            //border: $gb-row_5-dsh-org;
+            height: 60px;
+            margin: 30px 30px -30px 30px;
+            overflow: hidden;
+            text-wrap: nowrap;
+            padding-left: 15px;
+            position: fixed;
+            bottom: 60px;
+            #followUs {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                color: black;
+                font-weight: lighter;
+                font-size: 85%;
+                align-content: end;
+            }
+            h5 {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: lighter;
+                }
+            }
+            a:hover {
+                color: rgb(69, 208, 255);
+                cursor: pointer;
+                transition: color 0.2s ease-in-out;
+            }
+            #separator:hover {
+                color: black;
             }
         }
     }

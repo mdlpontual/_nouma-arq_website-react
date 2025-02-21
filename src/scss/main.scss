@@ -4,3 +4,12 @@
 @use "../ui/projects/aurora/Aurora1602.scss";
 @use "../ui/projects/paiva/CasPaiva.scss";
 @use "../ui/projects/serrambi/SerrambiFlats.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+* {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+  

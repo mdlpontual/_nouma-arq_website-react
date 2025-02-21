@@ -29,7 +29,7 @@ function HomePage() {
         <menu id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
           {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
         </menu>
-        <div id="jumboFrame" className="row">
+        <section id="jumboFrame" className="row">
           <div id="jumboInnerFrame" className={`col ${isHovered || isMenuOpen ? "hovered-border" : ""}`}></div>
           <div id="jumboInnerLogo" className="col">
             <div id="symbRow" className="row">
@@ -45,7 +45,7 @@ function HomePage() {
               <img id="nomaName" className="col-auto" src={IMG.nouma_lineName_white} alt="nouma name" />
             </div>
           </div>
-        </div>
+        </section>
       </header>
     </>
   )
