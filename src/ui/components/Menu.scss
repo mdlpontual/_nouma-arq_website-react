@@ -4,18 +4,22 @@
     @include box-reset-default;
     //border: $gb-row_5-sol-org;
     height: 100%;
-    width: 35%;
+    width: 40%;
     position: absolute;
     z-index: 3;
-    background-color: rgba(229, 255, 0, 1);
+    background-color: rgb(22, 33, 65);
     transition: width 0.5s ease-in-out;
+    overflow: hidden;
     #menuInnerFrame {
         @include box-reset-default;
-        border: 3px solid black;
+        border: 5px solid rgba(229, 255, 0, 1);
         border-right: none;
         border-radius: 10px 0 0 10px;
         margin: 30px 0 30px 30px;
-        clip-path: polygon(70px 0, 100% 0, 100% 100%, 0 100%, 0 155px);
+        clip-path: polygon(
+            0 0, 100% 0, 100% 100%, 0 100%, 0 0,
+            0 155px, 70px 155px, 70px 0, 0 0
+        );
     }
     #menuCol {
         @include box-reset-default;
@@ -45,12 +49,12 @@
             margin: 30px 30px -30px 30px;
             overflow: hidden;
             text-wrap: nowrap;
-            -webkit-text-stroke: 1.2px black;
+            -webkit-text-stroke: 1.2px white;
             #menuList {
                 @include box-reset-default;
                 //border: $gb-col_2-dsh-cyn;
                 list-style: none;
-                padding: 25px 0 0 15px;
+                padding: 25px 0 0 25px;
                 li {
                     @include box-reset-default;
                     //border: $gb-col_2-dsh-cyn;
@@ -64,9 +68,9 @@
                 }
             }
             h2:hover {
-                color: rgb(69, 208, 255);
+                color: rgba(229, 255, 0, 1);
                 cursor: pointer;
-                -webkit-text-stroke: 1.5px rgb(69, 208, 255);
+                -webkit-text-stroke: 1.5px rgba(229, 255, 0, 1);
                 transition: color 0.2s ease-in-out;
             }
         }
@@ -77,13 +81,14 @@
             margin: 30px 30px -30px 30px;
             overflow: hidden;
             text-wrap: nowrap;
-            padding-left: 15px;
-            position: fixed;
+            padding-left: 25px;
+            padding-bottom: 15px;
+            position: absolute;
             bottom: 60px;
             #followUs {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
-                color: black;
+                color: white;
                 font-weight: lighter;
                 font-size: 85%;
                 align-content: end;
@@ -93,12 +98,12 @@
                 //border: $gb-elm_2-dsh-lgr;
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: white;
                     font-weight: lighter;
                 }
             }
             a:hover {
-                color: rgb(69, 208, 255);
+                color: rgba(229, 255, 0, 1);
                 cursor: pointer;
                 transition: color 0.2s ease-in-out;
             }
@@ -116,7 +121,7 @@
     position: absolute;
     z-index: 3;
     background-color: rgba(229, 255, 0, 1);
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(22, 33, 65);
     transition: width 0.5s ease-in-out 0.25s, background-color 0.25s linear;
     overflow: hidden; 
 }

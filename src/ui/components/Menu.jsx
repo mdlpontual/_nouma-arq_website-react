@@ -2,14 +2,27 @@ import React, { useState, useEffect } from "react";
 import IMG from "../../assets/imagesHUB";
 
 function Menu({ setIsMenuOpen }) {
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.key === "Escape") {
+                setIsMenuOpen(false);
+            }
+        };
+
+        document.addEventListener("keydown", handleKeyDown);
+        return () => {
+            document.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [setIsMenuOpen]);
+
     return (
         <>
             <div id="menuInnerFrame" className="col"></div>
-            <div id="menuCol" className="col">
+            <menu id="menuCol" className="col">
                 <div id="menuSymb" className="row">
                     <img id="menuNomaSymbol" 
                         className="col-auto btn" 
-                        src={IMG.nouma_onlySymbol_black} 
+                        src={IMG.nouma_onlySymbol_green} 
                         onClick={() => setIsMenuOpen(false)}
                         alt="nouma symbol and menu button" />
                 </div>
@@ -38,7 +51,7 @@ function Menu({ setIsMenuOpen }) {
                         <a href="https://br.pinterest.com/noumaarquitetura/"> Pinterest</a>
                     </h5>
                 </address>
-            </div>
+            </menu>
         </>
     );
 }
