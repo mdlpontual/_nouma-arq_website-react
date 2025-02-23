@@ -7,7 +7,7 @@
     #projTitleRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 30%;
+        height: 25%;
         background-color: $pastelBlue;
         //border-bottom: 3px solid $cyberGreen;
         align-content: end;
@@ -23,7 +23,7 @@
     #cardsRow {
         @include box-reset-default;
        // border: $gb-row_5-sol-ylw;
-        height: 80%;
+        height: 75%;
         #card {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
@@ -54,6 +54,10 @@
                 text-align: center;
                 align-content: center;
                 color: white;
+                h5:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
             }
         }
     }

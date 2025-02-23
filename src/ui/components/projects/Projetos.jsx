@@ -52,16 +52,16 @@ function Projetos() {
                 </div>
                 <div id="cardsRow" className="row">
                     <div id="card" className="col-3" style={{backgroundImage: `url(${paivaSlideIMG})`}}>
-                        <h5 id="projectTitle">Casa Paiva</h5>
+                        <div id="projectTitle"><h5>Casa Paiva</h5></div>
                     </div>
                     <div id="card" className="col-3" style={{backgroundImage: `url(${serrambiSlideIMG})`}}>
-                        <h5 id="projectTitle">Serrambi Flats</h5>
+                        <div id="projectTitle"><h5>Serrambi Flats</h5></div>
                     </div>
                     <div id="card" className="col-3" style={{backgroundImage: `url(${aptoSlideIMG})`}}>
-                        <h5 id="projectTitle">404</h5>
+                        <div id="projectTitle"><h5>404</h5></div>
                     </div>
                     <div id="card" className="col-3" style={{backgroundImage: `url(${auroraSlideIMG})`}}>
-                        <h5 id="projectTitle">Aurora 1602</h5>
+                        <div id="projectTitle"><h5>Aurora 1602</h5></div>
                     </div>
                 </div>
             </section>
