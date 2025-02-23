@@ -12,6 +12,7 @@ function About() {
                 </div>
                 <div id="aboutTextRow" className="row">
                     <div id="textCol" className="col-auto">
+                        <img src={IMG.tessSymbol_white} alt="simbolo tesserato"/>
                         <h3 id="textTitle">
                             arquitetura em contexto
                         </h3>

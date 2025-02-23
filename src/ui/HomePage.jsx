@@ -3,6 +3,7 @@ import IMG from "../assets/imagesHUB";
 import Jumbtron from "./components/jumbotron/Jumbotron";
 import About from "./components/about/About";
 import Projetos from "./components/projects/Projetos";
+import Contact from "./components/contact/Contact";
 
 function HomePage() {
   return (
@@ -14,6 +15,9 @@ function HomePage() {
         <About />
         <Projetos />
       </body>
+      <footer>
+        <Contact />
+      </footer>
     </>
   )
 }

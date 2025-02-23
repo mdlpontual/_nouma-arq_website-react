@@ -25,13 +25,19 @@
         //border: $gb-row_5-sol-ylw;
         height: 50%;
         background-color: $pastelBlue;
-        //border-top: 5px solid $cyberGreen;
         align-content: center;
         justify-content: center;
         padding: 20%;
         #textCol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
+            justify-items: center;
+            img {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                height: 100px;
+                padding-bottom: 25px;
+            }
             h3 {
                 text-align: center;
                 margin-bottom: 25px;

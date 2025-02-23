@@ -1,0 +1,99 @@
+@use "../../../scss" as *;
+
+#contactCon {
+    @include box-reset-default;
+    //border: $gb-con_5-sol-red;
+    height: 200vh;
+    #tessSymbolRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 63%;
+        align-content: center;
+        justify-content: center;
+        #tessSymbol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: fit-content;
+            img {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                height: 300px;
+            }
+        }
+    }
+    #contactsRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 30%;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 250px;
+        #adressCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: 250px;
+            width: 250px;
+            text-align: center;
+            color: black;
+            img {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                height: 200px;
+                padding: 10px;
+            }
+            h5 {
+                bottom: 0px;
+            }
+        }
+        #phoneCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: 250px;
+            width: 250px;
+            text-align: center;
+            color: black;
+            img {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                height: 200px;
+                padding: 10px;
+            }
+        }
+        #emailCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: 250px;
+            width: 250px;
+            text-align: center;
+            color: black;
+            img {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                height: 200px;
+            }
+        }
+    }
+    #footerRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-org;
+        height: 7%;
+        background-color: $cyberGreen;
+        justify-content: center;
+        #footerCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            color: black;
+            align-content: center;
+            justify-items: center;
+            h4 {
+                @include box-reset-default;
+                font-weight: 700;
+            }
+            h5 {
+                @include box-reset-default;
+            }
+        }
+    }
+}
