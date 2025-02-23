@@ -3,11 +3,11 @@
 #projectsCon {
     @include box-reset-default;
     //border: $gb-con_5-sol-red;
-    height: 200vh;
+    height: 100vh;
     #projTitleRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 50%;
+        height: 30%;
         background-color: $pastelBlue;
         //border-bottom: 3px solid $cyberGreen;
         align-content: end;
@@ -16,14 +16,14 @@
         #projTitle {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
-            font-size: 10rem;
+            font-size: 7rem;
             -webkit-text-stroke: 1.2px white;
         }
     }
     #cardsRow {
         @include box-reset-default;
        // border: $gb-row_5-sol-ylw;
-        height: 50%;
+        height: 80%;
         #card {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
@@ -31,8 +31,30 @@
             background-size: cover; 
             background-repeat: no-repeat; 
             background-position-x: center;
-            transition: background-image 1.5s ease-in-out;
+            transition: background-image 2s ease-in-out;
             transition-delay: 1s;
+            #projectTitle {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                background-color: rgb(0, 0, 0, 0);
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                align-content: center;
+                color: rgb(0, 0, 0, 0);
+            }
+            #projectTitle:hover {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                background-color: rgb(0, 0, 0, 0);
+                background-color: rgb(0, 0, 0, 0.5);
+                transition: background-color 0.2s linear;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                align-content: center;
+                color: white;
+            }
         }
     }
 }

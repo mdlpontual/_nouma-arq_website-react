@@ -12,10 +12,10 @@ function Projetos() {
     const [aptoSlideIMG, setAptoSlideIMG] = useState(aptoIMG[0]);
     const [auroraSlideIMG, setAuroraSlideIMG] = useState(auroraIMG[0]);
 
-    const randomInterval_01 = Math.floor(Math.random() * 10000);
-    const randomInterval_02 = Math.floor(Math.random() * 10000);
-    const randomInterval_03 = Math.floor(Math.random() * 10000);
-    const randomInterval_04 = Math.floor(Math.random() * 10000);
+    const randomInterval_01 = Math.floor(Math.random() * 100000);
+    const randomInterval_02 = Math.floor(Math.random() * 100000);
+    const randomInterval_03 = Math.floor(Math.random() * 100000);
+    const randomInterval_04 = Math.floor(Math.random() * 100000);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -52,16 +52,16 @@ function Projetos() {
                 </div>
                 <div id="cardsRow" className="row">
                     <div id="card" className="col-3" style={{backgroundImage: `url(${paivaSlideIMG})`}}>
-                        
+                        <h5 id="projectTitle">Casa Paiva</h5>
                     </div>
                     <div id="card" className="col-3" style={{backgroundImage: `url(${serrambiSlideIMG})`}}>
-
+                        <h5 id="projectTitle">Serrambi Flats</h5>
                     </div>
                     <div id="card" className="col-3" style={{backgroundImage: `url(${aptoSlideIMG})`}}>
-
+                        <h5 id="projectTitle">404</h5>
                     </div>
                     <div id="card" className="col-3" style={{backgroundImage: `url(${auroraSlideIMG})`}}>
-
+                        <h5 id="projectTitle">Aurora 1602</h5>
                     </div>
                 </div>
             </section>
