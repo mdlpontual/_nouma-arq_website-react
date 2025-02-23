@@ -34,7 +34,7 @@ function Jumbotron() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIMG(jumboIMG[Math.floor(Math.random() * jumboIMG.length)]);
-    }, 15000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 

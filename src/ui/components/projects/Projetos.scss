@@ -3,11 +3,11 @@
 #projectsCon {
     @include box-reset-default;
     //border: $gb-con_5-sol-red;
-    height: 100vh;
+    height: 200vh;
     #projTitleRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 60%;
+        height: 50%;
         background-color: $pastelBlue;
         //border-bottom: 3px solid $cyberGreen;
         align-content: end;
@@ -22,21 +22,17 @@
     }
     #cardsRow {
         @include box-reset-default;
-        //border: $gb-row_5-sol-ylw;
-        height: 40%;
-        #dummyCard {
+       // border: $gb-row_5-sol-ylw;
+        height: 50%;
+        #card {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
-            padding: 15px;
-            #card {
-                @include box-reset-default;
-                //border: $gb-elm_2-dsh-lgr;
-                height: 100%;
-                padding: 15px;
-                img {
-                    width: 100%;
-                }
-            }
+            height: 100%;
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position-x: center;
+            transition: background-image 1.5s ease-in-out;
+            transition-delay: 1s;
         }
     }
 }
