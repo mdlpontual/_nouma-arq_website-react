@@ -7,7 +7,7 @@ function Projetos() {
             <section id="projectsCon" className="container-fluid">
                 <div id="projTitleRow" className="row">
                     <h1 id="projTitle" className="col-auto">
-                        projetos
+                        PROJETOS
                     </h1>
                 </div>
                 <div id="cardsRow" className="row">

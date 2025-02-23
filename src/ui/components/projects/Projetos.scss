@@ -9,9 +9,10 @@
         //border: $gb-row_5-sol-ylw;
         height: 60%;
         background-color: $pastelBlue;
-        border-bottom: 3px solid $cyberGreen;
+        //border-bottom: 3px solid $cyberGreen;
         align-content: end;
-        padding: 0 0 25px 100px;
+        justify-content: center;
+        padding: 0 0 25px 0;
         #projTitle {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
