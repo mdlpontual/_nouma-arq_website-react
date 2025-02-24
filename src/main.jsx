@@ -15,7 +15,8 @@ const router = createBrowserRouter([
   { path: '/casaPaiva', element: <CasaPaiva />},
   { path: '/seerrambiFlats', element: <SeerrambiFlats />},
   { path: '/apto404', element: <Apto404 />},
-  { path: '/aurora1602', element: <Aurora1602 />}
+  { path: '/aurora1602', element: <Aurora1602 />},
+  
 ]);
 
 createRoot(document.getElementById('root')).render(
