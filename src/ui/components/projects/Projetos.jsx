@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../../assets/imagesHUB";
+import { Link } from "react-router-dom";
 
 const paivaIMG = [ IMG.paiva_03, IMG.paiva_06, IMG.paiva_11, IMG.paiva_12, IMG.paiva_18, IMG.paiva_20, IMG.paiva_21 ];
 const serrambiIMG = [ IMG.serrambi_00, IMG.serrambi_02, IMG.serrambi_04, IMG.serrambi_05, IMG.serrambi_08, IMG.serrambi_17, IMG.serrambi_18 ];
@@ -52,16 +53,32 @@ function Projetos() {
                 </div>
                 <div id="cardsRow" className="row">
                     <div id="card" className="col-3" style={{backgroundImage: `url(${paivaSlideIMG})`}}>
-                        <div id="projectTitle"><h5>Casa Paiva</h5></div>
+                        <Link to={'/casaPaiva'}>
+                            <div id="projectTitle">
+                                <h5>Casa Paiva</h5>
+                            </div>
+                        </Link>
                     </div>
                     <div id="card" className="col-3" style={{backgroundImage: `url(${serrambiSlideIMG})`}}>
-                        <div id="projectTitle"><h5>Serrambi Flats</h5></div>
+                        <Link to={'/seerrambiFlats'}>
+                            <div id="projectTitle">
+                                <h5>Serrambi Flats</h5>
+                            </div>
+                        </Link>
                     </div>
                     <div id="card" className="col-3" style={{backgroundImage: `url(${aptoSlideIMG})`}}>
-                        <div id="projectTitle"><h5>404</h5></div>
+                        <Link to={'/apto404'}>
+                            <div id="projectTitle">
+                                <h5>404</h5>
+                            </div>
+                        </Link>
                     </div>
                     <div id="card" className="col-3" style={{backgroundImage: `url(${auroraSlideIMG})`}}>
-                        <div id="projectTitle"><h5>Aurora 1602</h5></div>
+                        <Link to={'/aurora1602'}>
+                            <div id="projectTitle">
+                                <h5>Aurora 1602</h5>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </section>

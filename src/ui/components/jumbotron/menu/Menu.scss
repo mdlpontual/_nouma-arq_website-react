@@ -58,6 +58,10 @@
                 li {
                     @include box-reset-default;
                     //border: $gb-col_2-dsh-cyn;
+                    a {
+                        text-decoration: none;
+                        color: inherit; 
+                    }
                     h2 {
                         @include box-reset-default;
                     }

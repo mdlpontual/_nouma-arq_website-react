@@ -4,7 +4,7 @@ import IMG from "../../../../assets/imagesHUB";
 function Apto404() {
     return (
       <>
-        <h1>404</h1>
+        <h1 id="test">404</h1>
       </>
     )
 }

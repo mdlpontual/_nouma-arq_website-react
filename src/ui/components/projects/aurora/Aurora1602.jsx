@@ -4,7 +4,7 @@ import IMG from "../../../../assets/imagesHUB";
 function Aurora1602() {
     return (
       <>
-        <h1>Aurora</h1>
+        <h1 id="test">Aurora</h1>
       </>
     )
 }

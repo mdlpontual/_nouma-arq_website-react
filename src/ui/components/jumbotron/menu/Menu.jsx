@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../../../assets/imagesHUB";
+import { Link } from "react-router-dom";
 
 function Menu({ setIsMenuOpen }) {
     useEffect(() => {
@@ -33,10 +34,10 @@ function Menu({ setIsMenuOpen }) {
                         </li>
                         <li>
                             <h2>PROJETOS</h2>
-                            <h2 id="projLi">CASA PAIVA</h2>
-                            <h2 id="projLi">FLATS SERRAMBI</h2>
-                            <h2 id="projLi">404</h2>
-                            <h2 id="projLi">AURORA 1602</h2>
+                            <Link to={'/casaPaiva'}><h2 id="projLi">CASA PAIVA</h2></Link>
+                            <Link to={'/seerrambiFlats'}><h2 id="projLi">FLATS SERRAMBI</h2></Link>
+                            <Link to={'/apto404'}><h2 id="projLi">404</h2></Link>
+                            <Link to={'/aurora1602'}><h2 id="projLi">AURORA 1602</h2></Link>
                         </li>
                         <li>
                             <h2>CONTATO</h2>

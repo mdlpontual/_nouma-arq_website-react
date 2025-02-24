@@ -33,6 +33,10 @@
             background-position-x: center;
             transition: background-image 2s ease-in-out;
             transition-delay: 1s;
+            a {
+                text-decoration: none;
+                color: inherit; 
+            }
             #projectTitle {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;

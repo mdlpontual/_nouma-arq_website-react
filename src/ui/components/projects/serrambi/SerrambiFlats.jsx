@@ -4,7 +4,7 @@ import IMG from "../../../../assets/imagesHUB";
 function SeerrambiFlats() {
     return (
       <>
-        <h1>Serrambi</h1>
+        <h1 id="test">Serrambi</h1>
       </>
     )
 }

@@ -4,7 +4,7 @@ import IMG from "../../../../assets/imagesHUB";
 function CasaPaiva() {
     return (
       <>
-        <h1>Casa Paiva</h1>
+        <h1 id="test">Casa Paiva</h1>
       </>
     )
 }
