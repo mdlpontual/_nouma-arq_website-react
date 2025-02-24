@@ -14,20 +14,21 @@ function About() {
                     <div id="textCol" className="col-auto">
                         <img src={IMG.tessSymbol_white} alt="simbolo tesserato"/>
                         <h3 id="textTitle">
-                            arquitetura em contexto
+                            Architecture in Context
                         </h3>
                         <p id="text">
-                            A NOUMA é um pequeno escritório de arquitetura de Pernambuco, Brasil, especializado em projetos residenciais e design de interiores. 
-                            Nossa missão é transformar os sonhos das famílias em realidade, convertendo problemas em soluções. 
+                            NOUMA is a small architecture office from Pernambuco, Brasil. We are specialized in residential civil projects and interior design, 
+                            and our mission is to transform families dreams into reality, by changing problems into solutions.<br/>
                             <br/>
-                            Nosso objetivo em cada projeto é alcançar a função e a estética ideais, indo além da terceira dimensão. Gostamos de chamar isso de o "template do Tesseract", 
-                            onde o trabalho do designer nas três dimensões materiais deve seguir uma dimensão que não é material, a quarta dimensão abstrata.
+                            Our goal in every project is to reach the ideal function and aesthetics beyond the third dimension. We like to call this the "Tesseract" template, 
+                            where the designer's work on the three material dimensions needs to follow the one dimension that is not material, the abstract fourth one.<br/>
                             <br/>
-                            O Tesseract (ou Hipercubo) é um objeto geométrico teórico de quatro dimensões, matematicamente possível de existir, mas que nós, 
-                            como seres humanos vivendo em um mundo tridimensional, não conseguimos visualizar plenamente.
+                            The Tesseract (or Hypercube) is a theoretical 4D geometrical object that is mathematically possible to exist, but we as humans, 
+                            living in a 3D world, cannot fathom how it would look like in real life.<br/>
                             <br/>
-                            Na NOUMA, usamos a ideia do Tesseract como nosso lema, onde a quarta dimensão representa a dimensão humana. Nosso trabalho nas três dimensões materiais é guiado pelas aspirações humanas da dimensão abstrata. 
-                            Cada necessidade e desejo do cliente influencia diretamente o desenvolvimento dos nossos projetos, e nós, como arquitetos, buscamos ser operadores transparentes entre o sonho e o produto final.
+                            We at NOUMA use the idea of the Tesseract as our motto, where the fourth dimension is the "human" dimension. Our craft in the three material 
+                            dimensions is guided by the human aspirations of the abstract dimension. The client's every necessity and desire influences the way that our 
+                            projects are developed, and we as architects try to be a transparent operator between the dream and the final product.
                         </p>
                     </div>
                 </div>

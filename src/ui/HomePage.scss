@@ -1,0 +1,52 @@
+@use "../scss" as *;
+
+#notFoundCon {
+    @include box-reset-default;
+    //border: $gb-con_5-sol-red;
+    height: 100vh;
+    padding: 30px;
+    background-color: $pastelBlue;
+    #notFoundRow {
+        @include box-reset-default;
+        border: 5px solid white;
+        border-radius: 10px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        position: relative;
+        #notFoundLogoCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: fit-content;
+            width: fit-content;
+            align-content: center;
+            justify-items: center;
+            height: fit-content;
+            position: absolute;
+            bottom: 0;
+            img {
+                height: 100px;
+                object-fit: contain;
+                margin-bottom: 25px;
+            }
+        }
+        #notFoundCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: fit-content;
+            width: fit-content;
+            align-content: center;
+            justify-items: center;
+            a {
+                text-decoration: none;
+                color: inherit; 
+            }
+            h4:hover {
+                color: $cyberGreen;
+            }
+        }
+    }
+}

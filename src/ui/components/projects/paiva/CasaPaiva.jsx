@@ -31,11 +31,11 @@ function CasaPaiva() {
                         <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno"  />
                     </div>
                 </div>
-                <div id="prjTextRow" className="row">
+                {/* <div id="prjTextRow" className="row">
                     <div id="prjTextCol" className="col-auto">
                         <p>some text</p>
                     </div>
-                </div>
+                </div> */}
             </section>
             <section id="imgsCon" className="container-fluid">
                 {imgArr.map((img, i) => (

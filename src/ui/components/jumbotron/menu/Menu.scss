@@ -64,6 +64,11 @@
                     }
                     h2 {
                         @include box-reset-default;
+                        a {
+                            text-decoration: none;
+                            color: inherit; 
+                            -webkit-text-stroke: 0px white;
+                        }
                     }
                     #projLi {
                         @include box-reset-default;
