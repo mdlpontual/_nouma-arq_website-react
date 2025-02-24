@@ -1,12 +1,25 @@
-import { StrictMode } from 'react'
+import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import App from './App.jsx';
+import CasaPaiva from './ui/components/projects/paiva/CasaPaiva.jsx';
+import SeerrambiFlats from './ui/components/projects/serrambi/SerrambiFlats.jsx';
+import Apto404 from './ui/components/projects/404/Apt404.jsx';
+import Aurora1602 from './ui/components/projects/aurora/Aurora1602.jsx';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./scss/main.scss";
 
+const router = createBrowserRouter([
+  { path: '/', element: <App /> },
+  { path: '/casaPaiva', element: <CasaPaiva />},
+  { path: '/seerrambiFlats', element: <SeerrambiFlats />},
+  { path: '/apto404', element: <Apto404 />},
+  { path: '/aurora1602', element: <Aurora1602 />}
+]);
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>,
 )

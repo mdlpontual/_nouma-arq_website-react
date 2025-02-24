@@ -12,7 +12,7 @@ const jumboIMG = [
 ];
 
 function Jumbotron() {
-  const [currentIMG, setCurrentIMG] = useState(jumboIMG[0]);
+  const [currentIMG, setCurrentIMG] = useState(jumboIMG[Math.floor(Math.random() * jumboIMG.length)]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [symbolSrc, setSymbolSrc] = useState(IMG.nouma_onlySymbol_white);
@@ -34,7 +34,7 @@ function Jumbotron() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIMG(jumboIMG[Math.floor(Math.random() * jumboIMG.length)]);
-    }, 5000);
+    }, 15000);
     return () => clearInterval(interval);
   }, []);
 

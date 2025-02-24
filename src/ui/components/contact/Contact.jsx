@@ -28,7 +28,7 @@ function Contact() {
                 <div id="footerRow" className="row">
                     <div id="footerCol" className="col-auto">
                         <h4>NOUMA Arquitetura</h4>
-                        <h5>copyright Nouma Arquitetura - 2025</h5>
+                        <h5>copyright - 2025</h5>
                     </div>
                 </div>
             </section>
