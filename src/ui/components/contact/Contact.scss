@@ -12,11 +12,11 @@
         justify-content: center;
         #tessSymbol {
             @include box-reset-default;
-            border: $gb-col_5-sol-blu;
+            //border: $gb-col_5-sol-blu;
             height: fit-content;
             img {
                 @include box-reset-default;
-                border: $gb-elm_2-dsh-lgr;
+                //border: $gb-elm_2-dsh-lgr;
                 height: 300px;
             }
         }
