@@ -5,9 +5,9 @@ const imgArr = [ IMG.paiva_01, IMG.paiva_02, IMG.paiva_03, IMG.paiva_04, IMG.pai
     IMG.paiva_06, IMG.paiva_07, IMG.paiva_08, IMG.paiva_09, IMG.paiva_10, IMG.paiva_11, 
     IMG.paiva_12, IMG.paiva_13, IMG.paiva_14, IMG.paiva_15, IMG.paiva_16, IMG.paiva_17, 
     IMG.paiva_18, IMG.paiva_19, IMG.paiva_20, IMG.paiva_21, IMG.paiva_22, 
-    IMG.paiva_photo_01, IMG.paiva_photo_02, IMG.paiva_photo_02, IMG.paiva_photo_03,
-    IMG.paiva_photo_04, IMG.paiva_photo_05, IMG.paiva_photo_06, IMG.paiva_photo_07,
-    IMG.paiva_photo_08, IMG.paiva_photo_09
+    IMG.paiva_photo_01, IMG.paiva_photo_02, IMG.paiva_photo_03, IMG.paiva_photo_04, 
+    IMG.paiva_photo_05, IMG.paiva_photo_06, IMG.paiva_photo_07, IMG.paiva_photo_08, 
+    IMG.paiva_photo_09, IMG.paiva_photo_10, IMG.paiva_photo_11
 ];
 
 function CasaPaiva() {

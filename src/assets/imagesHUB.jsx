@@ -93,6 +93,8 @@ const IMG = {
     paiva_photo_07: new URL('./IMG/PAIVA/select/PAIVA_PHOTO_07.jpg', import.meta.url).href,
     paiva_photo_08: new URL('./IMG/PAIVA/select/PAIVA_PHOTO_08.jpg', import.meta.url).href,
     paiva_photo_09: new URL('./IMG/PAIVA/select/PAIVA_PHOTO_09.jpg', import.meta.url).href,
+    paiva_photo_10: new URL('./IMG/PAIVA/select/PAIVA_PHOTO_10.jpg', import.meta.url).href,
+    paiva_photo_11: new URL('./IMG/PAIVA/select/PAIVA_PHOTO_11.jpg', import.meta.url).href,
 
     serrambi_00: new URL('./IMG/SERRAMBI/select/SERRAMBI_00.jpg', import.meta.url).href,
     serrambi_01: new URL('./IMG/SERRAMBI/select/SERRAMBI_01.jpg', import.meta.url).href,
