@@ -1,5 +1,47 @@
 @use "../scss" as *;
 
+// Global fade-in effect
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.fade-in-late {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.95);
+    animation: scaleIn 1s ease-out forwards;
+}
+
+// Keyframe Animations
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
 #notFoundCon {
     @include box-reset-default;
     //border: $gb-con_5-sol-red;

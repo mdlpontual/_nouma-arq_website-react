@@ -8,6 +8,8 @@
     background-position: center;
     height: 100vh;
     position: relative;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
     &::before {
         content: "";
         position: absolute;
@@ -31,11 +33,15 @@
             align-content: end;
             justify-items: center;
             padding-bottom: 50px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
             #prjTitle {
                 @include box-reset-default;
                 //border: $gb-elm_5-sol-lgr;
                 width: fit-content;
                 font-size: 10rem;
+                opacity: 0;
+                animation: fadeIn 3s ease-out forwards;
             }
         }
     }
