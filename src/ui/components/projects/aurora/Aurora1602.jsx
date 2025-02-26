@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../../../assets/imagesHUB";
+import { Link } from "react-router-dom";
 
 const imgArr = [ IMG.aurora1602_01, IMG.aurora1602_02, IMG.aurora1602_03, IMG.aurora1602_04, IMG.aurora1602_05 ];
 
@@ -23,12 +24,12 @@ function Aurora1602() {
                     <div id="preImgsCol" className="col-auto">
                         <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno"  />
                     </div>
-                </div>
-                {/* <div id="prjTextRow" className="row">
                     <div id="prjTextCol" className="col-auto">
-                        <p>some text</p>
+                        <h4>Projeto de Decoração e Marcenaria para Apartamento.</h4>
+                        <h4>135m²</h4>
+                        <h4>2020-2021</h4>
                     </div>
-                </div> */}
+                </div>
             </section>
             <section id="imgsCon" className="container-fluid">
                 {imgArr.map((img, i) => (
@@ -41,6 +42,11 @@ function Aurora1602() {
         </body>
         <footer>
             <section id="prjFooterCon" className="container-fluid">
+                <div id="backBtnRow" className="row">
+                    <Link to={'/'}>
+                        <h4 id="backBtn" className="btn">Página Inicial</h4>
+                    </Link>
+                </div>
                 <div id="prjFooterRow" className="row">
                     <div id="prjFooterCol" className="col-auto">
                         <h4>NOUMA Arquitetura</h4>

@@ -14,21 +14,23 @@ function About() {
                     <div id="textCol" className="col-auto">
                         <img src={IMG.tessSymbol_white} alt="simbolo tesserato"/>
                         <h3 id="textTitle">
-                            Architecture in Context
+                            Arquitetura em Contexto
                         </h3>
                         <p id="text">
-                            NOUMA is a small architecture office from Pernambuco, Brasil. We are specialized in residential civil projects and interior design, 
-                            and our mission is to transform families dreams into reality, by changing problems into solutions.<br/>
+                            NOUMA é um pequeno escritório de arquitetura situado em Recife, Pernambuco. Somos especializados em projetos residenciais e design de interiores, 
+                            e nossa missão é transformar as ideias dos nossos clientes em realidade por meio da solução eficiente de problemas.<br/>
                             <br/>
-                            Our goal in every project is to reach the ideal function and aesthetics beyond the third dimension. We like to call this the "Tesseract" template, 
-                            where the designer's work on the three material dimensions needs to follow the one dimension that is not material, the abstract fourth one.<br/>
+                            Nosso objetivo é alcançar estética e funcionalidade ideais em cada projeto, indo além das três dimensões materiais. Gostamos de chamar isso de template "Tesserato", 
+                            onde o trabalho do projetista precisa seguir a batuta da única dimensão não material: a abstrata quarta dimensão.<br/>
                             <br/>
-                            The Tesseract (or Hypercube) is a theoretical 4D geometrical object that is mathematically possible to exist, but we as humans, 
-                            living in a 3D world, cannot fathom how it would look like in real life.<br/>
+                            O Tesserato (ou Hypercubo) é uma forma geométrica conceitual em quatro dimensões, humanamente impossível de ser desenhada ou explicada corretamente, 
+                            mas matematicamente real e possível de existir. <br/>
                             <br/>
-                            We at NOUMA use the idea of the Tesseract as our motto, where the fourth dimension is the "human" dimension. Our craft in the three material 
-                            dimensions is guided by the human aspirations of the abstract dimension. The client's every necessity and desire influences the way that our 
-                            projects are developed, and we as architects try to be a transparent operator between the dream and the final product.
+                            Nós da NOUMA usamos o conceito do Tesserato como nossa principal filosofia de trabalho, 
+                            onde a quarta dimensão representa a "dimensão humana" – aquela que não pode ser desenhada nem explicada, apenas sentida.<br/>
+                            <br/>
+                            Nosso trabalho nas três dimensões materiais é guiado pelas aspirações humanas da quarta dimensão. Cada necessidade e desejo do cliente influencia a forma como nossos projetos são desenvolvidos, 
+                            e nós, como arquitetos, buscamos ser um operador transparente entre sonho e o produto final.
                         </p>
                     </div>
                 </div>

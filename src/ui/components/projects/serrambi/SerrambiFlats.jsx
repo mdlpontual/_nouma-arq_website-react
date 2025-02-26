@@ -26,12 +26,11 @@ function SeerrambiFlats() {
                     <div id="preImgsCol" className="col-auto">
                         <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno"  />
                     </div>
-                </div>
-                {/* <div id="prjTextRow" className="row">
                     <div id="prjTextCol" className="col-auto">
-                        <p>some text</p>
+                        <h4>Flats na praia de Serrambi - Pernambuco</h4>
+                        <h4>2018</h4>
                     </div>
-                </div> */}
+                </div>
             </section>
             <section id="imgsCon" className="container-fluid">
                 {imgArr.map((img, i) => (

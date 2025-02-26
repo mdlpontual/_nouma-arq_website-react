@@ -30,8 +30,12 @@ function CasaPaiva() {
                     <div id="preImgsCol" className="col-auto">
                         <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno"  />
                     </div>
+                    <div id="prjTextCol" className="col-auto">
+                        <h4>Residência na praia do Paiva - Pernambuco</h4>
+                        <h4>530m²</h4>
+                        <h4>2018-2023</h4>
+                    </div>
                 </div>
-                
             </section>
             <section id="imgsCon" className="container-fluid">
                 {imgArr.map((img, i) => (
