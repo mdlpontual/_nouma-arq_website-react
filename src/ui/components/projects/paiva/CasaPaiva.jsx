@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../../../assets/imagesHUB";
+import { Link } from "react-router-dom";
 
 const imgArr = [ IMG.paiva_01, IMG.paiva_02, IMG.paiva_03, IMG.paiva_04, IMG.paiva_05, 
     IMG.paiva_06, IMG.paiva_07, IMG.paiva_08, IMG.paiva_09, IMG.paiva_10, IMG.paiva_11, 
@@ -48,6 +49,11 @@ function CasaPaiva() {
         </body>
         <footer>
             <section id="prjFooterCon" className="container-fluid">
+                <div id="backBtnRow" className="row">
+                    <Link to={'/'}>
+                        <h4 id="backBtn" className="btn">Página Inicial</h4>
+                    </Link>
+                </div>
                 <div id="prjFooterRow" className="row">
                     <div id="prjFooterCol" className="col-auto">
                         <h4>NOUMA Arquitetura</h4>

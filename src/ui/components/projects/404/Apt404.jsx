@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../../../assets/imagesHUB";
+import { Link } from "react-router-dom";
 
 const imgArr = [ IMG.apt404_01, IMG.apt404_02, IMG.apt404_03, IMG.apt404_04, IMG.apt404_05, IMG.apt404_06, 
     IMG.apt404_07, IMG.apt404_08, IMG.apt404_09
@@ -43,6 +44,11 @@ function Apto404() {
         </body>
         <footer>
             <section id="prjFooterCon" className="container-fluid">
+                <div id="backBtnRow" className="row">
+                    <Link to={'/'}>
+                        <h4 id="backBtn" className="btn">Página Inicial</h4>
+                    </Link>
+                </div>
                 <div id="prjFooterRow" className="row">
                     <div id="prjFooterCol" className="col-auto">
                         <h4>NOUMA Arquitetura</h4>

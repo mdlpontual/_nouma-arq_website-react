@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../../../assets/imagesHUB";
+import { Link } from "react-router-dom";
 
 const imgArr = [ IMG.serrambi_01, IMG.serrambi_02, IMG.serrambi_03, IMG.serrambi_04, IMG.serrambi_05, IMG.serrambi_06, 
     IMG.serrambi_07, IMG.serrambi_08, IMG.serrambi_09, IMG.serrambi_10, IMG.serrambi_11, IMG.serrambi_12, IMG.serrambi_13, 
@@ -43,6 +44,11 @@ function SeerrambiFlats() {
         </body>
         <footer>
             <section id="prjFooterCon" className="container-fluid">
+                <div id="backBtnRow" className="row">
+                    <Link to={'/'}>
+                        <h4 id="backBtn" className="btn">Página Inicial</h4>
+                    </Link>
+                </div>
                 <div id="prjFooterRow" className="row">
                     <div id="prjFooterCol" className="col-auto">
                         <h4>NOUMA Arquitetura</h4>
