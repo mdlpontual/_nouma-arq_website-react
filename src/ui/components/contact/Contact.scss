@@ -24,7 +24,7 @@
     #contactsRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 30%;
+        height: 25%;
         align-content: center;
         justify-content: center;
         display: flex;
@@ -73,6 +73,37 @@
                 //border: $gb-elm_2-dsh-lgr;
                 height: 100px;
             }
+        }
+    }
+    #followRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 5%;
+        align-content: center;
+        justify-content: center;
+        #followUs {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            color: black;
+            text-align: center;
+            font-size: 1rem;
+            padding-bottom: 5px;
+        }
+        h5 {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            color: black;
+            text-align: center;
+            a {
+                text-decoration: none;
+                font-weight: lighter;
+                color: black;
+            }
+        }
+        a:hover {
+            color: $cyberGreen;
+            cursor: pointer;
+            transition: color 0.2s ease-in-out;
         }
     }
     #footerRow {

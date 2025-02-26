@@ -25,6 +25,14 @@ function Contact() {
                         <h5>projetos@nouma.com.br</h5>
                     </div>
                 </div>
+                <div id="followRow" className="row">
+                    <h5 id="followUs">follow us:</h5>
+                    <h5>
+                        <a href="https://www.instagram.com/noumaarquitetura/">Instagram </a>
+                        <a id="separator">|</a>
+                        <a href="https://br.pinterest.com/noumaarquitetura/"> Pinterest</a>
+                    </h5>
+                </div>
                 <div id="footerRow" className="row">
                     <div id="footerCol" className="col-auto">
                         <h4>NOUMA Arquitetura</h4>

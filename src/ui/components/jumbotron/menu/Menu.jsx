@@ -45,7 +45,7 @@ function Menu({ setIsMenuOpen }) {
                     </ul>
                 </nav>
                 <address id="menuFooter" className="row">
-                    <h5 id="followUs">follow us:</h5>
+                    <h6 id="followUs">follow us:</h6>
                     <h5>
                         <a href="https://www.instagram.com/noumaarquitetura/">Instagram </a>
                         <a id="separator">|</a>
