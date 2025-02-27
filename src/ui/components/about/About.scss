@@ -13,10 +13,11 @@
         #fullLogoCol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
+            padding: 20px;
             #fullLogo {
                 @include box-reset-default;
                 //border: $gb-elm_5-dsh-lgr;
-                height: 250px;
+                width: 100%;
             }
         }
     }
@@ -32,7 +33,7 @@
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
             justify-items: center;
-            width: 60%;
+            width: 70%;
             margin-top: 125px;
             margin-bottom: 125px;
             img {

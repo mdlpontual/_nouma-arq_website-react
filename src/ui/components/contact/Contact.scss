@@ -3,13 +3,14 @@
 #contactCon {
     @include box-reset-default;
     //border: $gb-con_5-sol-red;
-    height: 200vh;
+    height: fit-content;
     #tessSymbolRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 63%;
+        height: 100vh;
         align-content: center;
         justify-content: center;
+        padding: 50px;
         #tessSymbol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
@@ -17,19 +18,19 @@
             img {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
-                height: 300px;
+                width: 300px;
+                max-width: 100%;
             }
         }
     }
     #contactsRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 25%;
-        align-content: center;
-        justify-content: center;
+        height: 80vh;
+        min-height: fit-content;
         display: flex;
+        align-content: center;
         justify-content: space-around;
-        //padding-bottom: 175px;
         #adressCol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
@@ -37,6 +38,7 @@
             width: 250px;
             text-align: center;
             color: black;
+            align-content: center;
             img {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
@@ -44,6 +46,7 @@
                 padding: 10px;
             }
             h5 {
+                //border: $gb-elm_2-dsh-lgr;
                 bottom: 0px;
             }
         }
@@ -54,11 +57,16 @@
             width: 250px;
             text-align: center;
             color: black;
+            align-content: center;
             img {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
                 height: 100px;
                 padding: 10px;
+            }
+            h5 {
+                //border: $gb-elm_2-dsh-lgr;
+                bottom: 0px;
             }
         }
         #emailCol {
@@ -68,17 +76,22 @@
             width: 250px;
             text-align: center;
             color: black;
+            align-content: center;
             img {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
                 height: 100px;
+            }
+            h5 {
+                //border: $gb-elm_2-dsh-lgr;
+                bottom: 0px;
             }
         }
     }
     #followRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 5%;
+        height: 10vh;
         align-content: center;
         justify-content: center;
         #followUs {
@@ -109,7 +122,7 @@
     #footerRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-org;
-        height: 7%;
+        height: 10vh;
         background-color: $cyberGreen;
         justify-content: center;
         #footerCol {
