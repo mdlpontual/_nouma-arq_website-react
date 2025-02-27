@@ -20,7 +20,7 @@ function Apto404() {
                 </div>
             </section>
         </header>
-        <body>
+        <main>
             <section id="preImgsCon" className="container-fluid">
                 <div id="preImgsRow" className="row">
                     <div id="preImgsCol" className="col-auto">
@@ -35,13 +35,13 @@ function Apto404() {
             </section>
             <section id="imgsCon" className="container-fluid">
                 {imgArr.map((img, i) => (
-                        <div id="imgsRow" className="row">
+                        <div id="imgsRow" className="row" key={i}>
                             <img id="prjIMG" className="col-auto" src={imgArr[i]} alt="imagem projeto" />
                         </div>
                     )
                 )}
             </section>
-        </body>
+        </main>
         <footer>
             <section id="prjFooterCon" className="container-fluid">
                 <div id="backBtnRow" className="row">

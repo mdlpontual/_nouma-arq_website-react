@@ -57,7 +57,7 @@ function Jumbotron() {
                    alt="nouma symbol and menu button"/>
             </div>
             <div id="nameRow" className="row">
-              <img id="nomaName" className="col-auto" src={IMG.nouma_lineName_white} alt="nouma name" />
+              <img id="noumaName" className="col-auto" src={IMG.nouma_lineName_white} alt="nouma name" />
             </div>
           </div>
         </div>

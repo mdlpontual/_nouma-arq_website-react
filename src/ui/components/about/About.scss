@@ -3,11 +3,11 @@
 #aboutCon {
     @include box-reset-default;
     //border: $gb-con_5-sol-red;
-    height: 220vh;
+    height: fit-content;
     #mainLogoRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 50%;
+        height: 110vh;
         align-content: center;
         justify-content: center;
         #fullLogoCol {
@@ -23,15 +23,18 @@
     #aboutTextRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 50%;
+        min-height: 110vh;
+        max-height: fit-content;
         background-color: $pastelBlue;
         align-content: center;
         justify-content: center;
-        padding: 20%;
         #textCol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
             justify-items: center;
+            width: 60%;
+            margin-top: 125px;
+            margin-bottom: 125px;
             img {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;

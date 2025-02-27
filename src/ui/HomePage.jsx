@@ -11,10 +11,10 @@ function HomePage() {
       <header>
         <Jumbtron />
       </header>
-      <body>
+      <main>
         <About />
         <Projetos />
-      </body>
+      </main>
       <footer>
         <Contact />
       </footer>
