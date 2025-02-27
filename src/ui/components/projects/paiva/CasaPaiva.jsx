@@ -12,10 +12,21 @@ const imgArr = [ IMG.paiva_01, IMG.paiva_02, IMG.paiva_03, IMG.paiva_04, IMG.pai
 ];
 
 function CasaPaiva() {
+    const [firstLoad, setFirstLoad] = useState(true);
+
+    useEffect(() => {
+    setTimeout(() => setFirstLoad(false), 100000); 
+    }, []);
+
     return (
       <>
         <header>
-            <section id="prjHeaderCon" className="container-fluid" style={{backgroundImage: `url(${IMG.jumbotron_00})`}}>
+            <section id="prjHeaderCon" className="container-fluid"
+                style={{ 
+                    backgroundImage: `url(${IMG.jumbotron_00})`, 
+                    opacity: firstLoad ? 0 : 1, 
+                    transition: "opacity 1s ease-out"
+                  }}>
                 <div id="prjHeaderRow" className="row">
                     <div id="prjHeaderCol" className="col">
                         <h1 id="prjTitle">

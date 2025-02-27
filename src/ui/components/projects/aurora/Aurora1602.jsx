@@ -5,10 +5,21 @@ import { Link } from "react-router-dom";
 const imgArr = [ IMG.aurora1602_01, IMG.aurora1602_02, IMG.aurora1602_03, IMG.aurora1602_04, IMG.aurora1602_05 ];
 
 function Aurora1602() {
+    const [firstLoad, setFirstLoad] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => setFirstLoad(false), 10000); 
+    }, []);
+        
     return (
       <>
         <header>
-            <section id="prjHeaderCon" className="container-fluid" style={{backgroundImage: `url(${imgArr[0]})`}}>
+            <section id="prjHeaderCon" className="container-fluid" 
+                style={{ 
+                    backgroundImage: `url(${imgArr[0]})`, 
+                    opacity: firstLoad ? 0 : 1, 
+                    transition: "opacity 1s ease-out"
+                }}>
                 <div id="prjHeaderRow" className="row">
                     <div id="prjHeaderCol" className="col">
                         <h1 id="prjTitle">

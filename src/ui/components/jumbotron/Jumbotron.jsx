@@ -19,7 +19,7 @@ function Jumbotron() {
   const [firstLoad, setFirstLoad] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setFirstLoad(false), 100000); // Apply fade-in only on first load
+    setTimeout(() => setFirstLoad(false), 10000); 
   }, []);
 
   const handleMouseEnter = () => {
@@ -45,12 +45,12 @@ function Jumbotron() {
 
   return (
     <>
-        <section id="jumboCon" 
-            style={{ 
-              backgroundImage: `url(${currentIMG})`, 
-              opacity: firstLoad ? 0 : 1, 
-              transition: "opacity 1s ease-out"
-            }}>
+      <section id="jumboCon" className="container-fluid"  
+          style={{ 
+            backgroundImage: `url(${currentIMG})`, 
+            opacity: firstLoad ? 0 : 1, 
+            transition: "opacity 1s ease-out"
+          }}>
         <div id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
           {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
         </div>
