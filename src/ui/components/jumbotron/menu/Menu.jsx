@@ -30,7 +30,7 @@ function Menu({ setIsMenuOpen }) {
                 <nav id="menuNav" className="row">
                     <ul id="menuList" className="col">
                         <li>
-                            <h2><a href="#aboutCon">SOBRE</a></h2>
+                            <h2><a href="#aboutTextRow">SOBRE</a></h2>
                         </li>
                         <li>
                             <h2><a href="#projectsCon">PROJETOS</a></h2>
