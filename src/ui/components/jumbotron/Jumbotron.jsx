@@ -16,11 +16,6 @@ function Jumbotron() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [symbolSrc, setSymbolSrc] = useState(IMG.nouma_onlySymbol_white);
-  const [firstLoad, setFirstLoad] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setFirstLoad(false), 10000); 
-  }, []);
 
   const handleMouseEnter = () => {
       setIsHovered(true);
@@ -45,12 +40,7 @@ function Jumbotron() {
 
   return (
     <>
-      <section id="jumboCon" className="container-fluid"  
-          style={{ 
-            backgroundImage: `url(${currentIMG})`, 
-            opacity: firstLoad ? 0 : 1, 
-            transition: "opacity 1s ease-out"
-          }}>
+      <section id="jumboCon" className="container-fluid" style={{backgroundImage: `url(${currentIMG})`}}>
         <div id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
           {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
         </div>

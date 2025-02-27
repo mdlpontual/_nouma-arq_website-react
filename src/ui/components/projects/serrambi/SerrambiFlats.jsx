@@ -8,21 +8,10 @@ const imgArr = [ IMG.serrambi_01, IMG.serrambi_02, IMG.serrambi_03, IMG.serrambi
 ];
 
 function SeerrambiFlats() {
-    const [firstLoad, setFirstLoad] = useState(true);
-
-    useEffect(() => {
-        setTimeout(() => setFirstLoad(false), 10000); 
-    }, []);
-
     return (
       <>
         <header>
-            <section id="prjHeaderCon" className="container-fluid" 
-                style={{ 
-                    backgroundImage: `url(${IMG.jumbotron_20})`, 
-                    opacity: firstLoad ? 0 : 1, 
-                    transition: "opacity 1s ease-out"
-                }}>
+            <section id="prjHeaderCon" className="container-fluid" style={{backgroundImage: `url(${IMG.jumbotron_20})`}}>
                 <div id="prjHeaderRow" className="row">
                     <div id="prjHeaderCol" className="col">
                         <h1 id="prjTitle">
