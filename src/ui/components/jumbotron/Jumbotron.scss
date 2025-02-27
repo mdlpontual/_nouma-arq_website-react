@@ -6,13 +6,14 @@
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center;
-    transition: background-image 2s ease-in-out, opacity 1s ease-out; // Add opacity transition
-    transition-delay: 1s; // Keep existing delay for background transition
+    transition: background-image 2s ease-in-out, opacity 1s ease-out; 
+    transition-delay: 1s;
     height: 100vh;
     position: relative;
-    opacity: 0; // Ensure it starts hidden
     transform: translateY(20px);
-    animation: fadeIn 1s ease-out forwards;
+    animation: fadeIn 1s ease-out forwards; 
+    animation-delay: 1s;
+
     &::before {
         content: "";
         position: absolute;
@@ -80,5 +81,16 @@
                 }
             }
         }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
