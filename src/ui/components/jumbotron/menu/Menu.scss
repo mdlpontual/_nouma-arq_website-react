@@ -64,6 +64,8 @@
                     }
                     h2 {
                         @include box-reset-default;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                         a {
                             text-decoration: none;
                             color: inherit; 
@@ -133,4 +135,23 @@
     background-color: $pastelBlue;
     transition: width 0.5s ease-in-out 0.25s, background-color 0.25s linear;
     overflow: hidden; 
+}
+
+@media only screen and (max-width: 768px) {
+    #menuOpen {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-org;
+        height: 100%;
+        width: 100%;
+        #menuInnerFrame {
+            @include box-reset-default;
+            border: 5px solid $cyberGreen;
+            border-radius: 10px;
+            margin: 30px;
+            clip-path: polygon(
+                0 0, 100% 0, 100% 100%, 0 100%, 0 0,
+                0 155px, 70px 155px, 70px 0, 0 0
+            );
+        }
+    }
 }
