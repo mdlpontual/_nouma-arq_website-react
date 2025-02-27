@@ -19,7 +19,7 @@ function Jumbotron() {
   const [firstLoad, setFirstLoad] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setFirstLoad(false), 10000); // Apply fade-in only on first load
+    setTimeout(() => setFirstLoad(false), 100000); // Apply fade-in only on first load
   }, []);
 
   const handleMouseEnter = () => {
