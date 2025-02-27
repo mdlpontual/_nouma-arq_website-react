@@ -28,8 +28,10 @@ function SeerrambiFlats() {
                         <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno"  />
                     </div>
                     <div id="prjTextCol" className="col-auto">
-                        <h4>Flats na praia de Serrambi - Pernambuco</h4>
-                        <h4>2018</h4>
+                        <div id="prjTextElm">
+                            <h4>Flats na praia de Serrambi - Pernambuco</h4>
+                            <h4>2018</h4>
+                        </div>
                     </div>
                 </div>
             </section>
