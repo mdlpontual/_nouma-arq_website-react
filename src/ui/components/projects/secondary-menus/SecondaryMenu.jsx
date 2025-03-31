@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import IMG from "../../../../assets/imagesHUB";
 import { Link } from "react-router-dom";
 
-function Menu({ setIsMenuOpen }) {
+function Menu({ setIsMenuOpen, currentPage }) {
     useEffect(() => {
         const handleKeyDown = (event) => {
             if (event.key === "Escape") {
@@ -18,33 +18,28 @@ function Menu({ setIsMenuOpen }) {
 
     return (
         <>
-            <div id="menuInnerFrame" className="col"></div>
-            <menu id="menuCol" className="col">
-                <div id="menuSymb" className="row">
-                    <img id="menuNomaSymbol" 
+            <div id="secMenuInnerFrame" className="col"></div>
+            <menu id="secMenuCol" className="col">
+                <div id="secMenuSymb" className="row">
+                    <img id="secMenuNomaSymbol" 
                         className="col-auto btn" 
-                        src={IMG.nouma_onlySymbol_green} 
+                        src={IMG.menuYellowIcon} 
                         onClick={() => setIsMenuOpen(false)}
                         alt="nouma symbol and menu button" />
                 </div>
-                <nav id="menuNav" className="row">
-                    <ul id="menuList" className="col">
+                <nav id="secMenuNav" className="row">
+                    <ul id="secMenuList" className="col">
                         <li>
-                            <h2><a href="#aboutTextRow">SOBRE</a></h2>
-                        </li>
-                        <li>
-                            <h2><a href="#projectsCon">PROJETOS</a></h2>
-                            <Link to={'/casaPaiva'}><h2 id="projLi">CASA PAIVA</h2></Link>
-                            <Link to={'/seerrambiFlats'}><h2 id="projLi">SERRAMBI FLATS</h2></Link>
-                            <Link to={'/apto404'}><h2 id="projLi">APARTAMENTO 404</h2></Link>
-                            <Link to={'/aurora1602'}><h2 id="projLi">AURORA 1602</h2></Link>
-                        </li>
-                        <li>
-                            <h2><a href="#contactsRow">CONTATO</a></h2>
+                            <Link to={'/'}><h2 id="hpLi">PÁGINA INICIAL</h2></Link>
+                            <h2 id="notAnAnchor">PROJETOS</h2>
+                            <Link to={'/casaPaiva'}><h2 id={currentPage === "paiva" ? "activeProjLi" : "projLi"}>CASA PAIVA</h2></Link>
+                            <Link to={'/seerrambiFlats'}><h2 id={currentPage === "serrambi" ? "activeProjLi" : "projLi"}>SERRAMBI FLATS</h2></Link>
+                            <Link to={'/apto404'}><h2 id={currentPage === "apto404" ? "activeProjLi" : "projLi"}>APARTAMENTO 404</h2></Link>
+                            <Link to={'/aurora1602'}><h2 id={currentPage === "aurora" ? "activeProjLi" : "projLi"}>AURORA 1602</h2></Link>
                         </li>
                     </ul>
                 </nav>
-                <address id="menuFooter" className="row">
+                <address id="secMenuFooter" className="row">
                     <h6 id="followUs">follow us:</h6>
                     <h5>
                         <a href="https://www.instagram.com/noumaarquitetura/">Instagram </a>
