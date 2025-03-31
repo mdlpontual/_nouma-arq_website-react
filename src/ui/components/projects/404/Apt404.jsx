@@ -7,10 +7,15 @@ const imgArr = [ IMG.apt404_01, IMG.apt404_02, IMG.apt404_03, IMG.apt404_04, IMG
 ];
 
 function Apto404() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
       <>
         <header>
             <section id="prjHeaderCon" className="container-fluid" style={{backgroundImage: `url(${imgArr[5]})`}}>
+                <div id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
+                    {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
+                </div>
                 <div id="prjHeaderRow" className="row">
                     <div id="prjHeaderCol" className="col">
                         <h1 id="prjTitle">
