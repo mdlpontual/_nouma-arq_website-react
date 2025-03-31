@@ -153,5 +153,16 @@
             border-bottom: 5px solid $cyberGreen;
             margin: 30px;
         }
+        #secMenuCol {
+            #secMenuSymb {
+                #secMenuNomaSymbol {
+                    @include box-reset-default;
+                    //border: $gb-elm_5-sol-lgr;
+                    height: 35px;
+                    cursor: pointer;
+                    border-radius: 0;
+                }
+            }
+        }
     }
 }

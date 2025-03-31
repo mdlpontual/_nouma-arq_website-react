@@ -57,11 +57,11 @@ function Aurora1602() {
                           <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno"  />
                       </div>
                       <div id="prjTextCol" className="col-auto">
-                          <div id="prjTextElm">
-                              <h4>Projeto de Reforma e Decoração para Apartamento.</h4>
-                              <h4>93m²</h4>
-                              <h4>2020-2021</h4>
-                          </div>
+                        <div id="prjTextElm">
+                            <h4>Projeto de Decoração e Marcenaria para Apartamento.</h4>
+                            <h4>135m²</h4>
+                            <h4>2020-2021</h4>
+                        </div>
                       </div>
                   </div>
               </section>

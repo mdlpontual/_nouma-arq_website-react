@@ -64,11 +64,11 @@ function CasaPaiva() {
                           <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno"  />
                       </div>
                       <div id="prjTextCol" className="col-auto">
-                          <div id="prjTextElm">
-                              <h4>Projeto de Reforma e Decoração para Apartamento.</h4>
-                              <h4>93m²</h4>
-                              <h4>2020-2021</h4>
-                          </div>
+                        <div id="prjTextElm">
+                            <h4>Residência na praia do Paiva - Pernambuco</h4>
+                            <h4>530m²</h4>
+                            <h4>2018-2023</h4>
+                        </div>
                       </div>
                   </div>
               </section>
