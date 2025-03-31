@@ -1,16 +1,48 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../../../assets/imagesHUB";
 import { Link } from "react-router-dom";
+import Menu from "./../../projects/secondary-menus/SecondaryMenu"
 
 const imgArr = [ IMG.apt404_01, IMG.apt404_02, IMG.apt404_03, IMG.apt404_04, IMG.apt404_05, IMG.apt404_06, 
     IMG.apt404_07, IMG.apt404_08, IMG.apt404_09
 ];
 
 function Apto404() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
+    const [symbolSrc, setSymbolSrc] = useState(IMG.menuIcon);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+        setTimeout(() => {
+            setSymbolSrc(IMG.menuYellowIcon);
+        }, 100); // Slight delay for smooth transition
+    };
+  
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+        setTimeout(() => {
+            setSymbolSrc(IMG.menuIcon);
+        }, 100); // Slight delay for smooth transition
+    };
+
     return (
       <>
         <header>
             <section id="prjHeaderCon" className="container-fluid" style={{backgroundImage: `url(${imgArr[5]})`}}>
+                <div id={isMenuOpen ? "secMenuOpen" : "secMenuClosed"} className="row">
+                    {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} currentPage={"apto404"}/>}
+                </div>
+                <div id="prjMenuHeaderRow" className="row">
+                    <div id="prjMenuHeaderCol" className="col">
+                        <img id="menuIcon" 
+                             src={symbolSrc} 
+                             onMouseEnter={handleMouseEnter}
+                             onMouseLeave={handleMouseLeave}
+                             onClick={() => setIsMenuOpen(true)}
+                             alt="simbolo menu"/>
+                    </div>
+                </div>
                 <div id="prjHeaderRow" className="row">
                     <div id="prjHeaderCol" className="col">
                         <h1 id="prjTitle">
