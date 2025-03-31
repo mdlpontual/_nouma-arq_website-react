@@ -74,11 +74,12 @@
                         @include box-reset-default;
                         padding-left: 25px;
                         color: $cyberGreen;
+                        -webkit-text-stroke: 1.5px $cyberGreen;
                         cursor: default;
                     }
                 }
             }
-            
+
             h2:hover {
                 color: $cyberGreen;
                 cursor: pointer;
