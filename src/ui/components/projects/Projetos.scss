@@ -97,10 +97,27 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.2); 
     }
+    #prjMenuHeaderRow {
+        @include box-reset-default;
+        border: $gb-row_5-sol-ylw;
+        height: 50%;
+        position: relative;
+        z-index: 2;
+        align-content: end;
+        justify-content: center;
+        padding: 30px;
+        #prjMenuHeaderCol {
+            @include box-reset-default;
+            border: $gb-elm_5-sol-grn;
+            height: 100%;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+    }
     #prjHeaderRow {
         @include box-reset-default;
-        //border: $gb-row_5-sol-ylw;
-        height: 100%;
+        border: $gb-row_5-sol-ylw;
+        height: 50%;
         position: relative;
         z-index: 2;
         align-content: end;
