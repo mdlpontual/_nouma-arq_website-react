@@ -7,13 +7,35 @@ const imgArr = [ IMG.apt404_01, IMG.apt404_02, IMG.apt404_03, IMG.apt404_04, IMG
 ];
 
 function Apto404() {
+    const [isHovered, setIsHovered] = useState(false);
+    const [symbolSrc, setSymbolSrc] = useState(IMG.menuIcon);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+        setTimeout(() => {
+            setSymbolSrc(IMG.menuYellowIcon);
+        }, 100); // Slight delay for smooth transition
+    };
+  
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+        setTimeout(() => {
+            setSymbolSrc(IMG.menuIcon);
+        }, 100); // Slight delay for smooth transition
+    };
+
     return (
       <>
         <header>
             <section id="prjHeaderCon" className="container-fluid" style={{backgroundImage: `url(${imgArr[5]})`}}>
                 <div id="prjMenuHeaderRow" className="row">
                     <div id="prjMenuHeaderCol" className="col">
-
+                        <img id="menuIcon" 
+                             src={symbolSrc} 
+                             onMouseEnter={handleMouseEnter}
+                             onMouseLeave={handleMouseLeave}
+                             //onClick={() => setIsMenuOpen(true)}
+                             alt="simbolo menu"/>
                     </div>
                 </div>
                 <div id="prjHeaderRow" className="row">

@@ -119,6 +119,8 @@ const IMG = {
     phoneIcon: new URL('./IMG/call.png', import.meta.url).href,
     letterIcon: new URL('./IMG/letter.png', import.meta.url).href,
     placeIcon: new URL('./IMG/maps-and-flags.png', import.meta.url).href,
+    menuIcon: new URL('./IMG/menu.png', import.meta.url).href,
+    menuYellowIcon: new URL('./IMG/menuYellow.png', import.meta.url).href,
 }
 
 export default IMG; 

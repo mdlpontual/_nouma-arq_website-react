@@ -1,0 +1,157 @@
+@use "../../../../scss" as *;
+
+#menuOpen {
+    @include box-reset-default;
+    //border: $gb-row_5-sol-org;
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    z-index: 3;
+    background-color: $pastelBlue;
+    transition: width 0.5s ease-in-out;
+    overflow: hidden;
+    #menuInnerFrame {
+        @include box-reset-default;
+        border: 5px solid $cyberGreen;
+        border-right: none;
+        border-radius: 10px 0 0 10px;
+        margin: 30px 0 30px 30px;
+        clip-path: polygon(
+            0 0, 100% 0, 100% 100%, 0 100%, 0 0,
+            0 155px, 70px 155px, 70px 0, 0 0
+        );
+    }
+    #menuCol {
+        @include box-reset-default;
+        //border: $gb-col_5-sol-cyn;
+        position: absolute;
+        height: 100%;
+        #menuSymb {
+            @include box-reset-default;
+            //border: $gb-row_5-dsh-org;
+            height: fit-content;
+            margin: 30px 30px -30px 30px;
+            #menuNomaSymbol {
+                @include box-reset-default;
+                //border: $gb-col_5-dsh-cyn;
+                height: 150px;
+                padding: 5px;
+                position: relative;
+                top: -7px;
+                left: -7px;
+                cursor: pointer;
+            }
+        }
+        #menuNav {
+            @include box-reset-default;
+            //border: $gb-row_5-dsh-org;
+            height: fit-content;
+            margin: 30px 30px -30px 30px;
+            overflow: hidden;
+            text-wrap: nowrap;
+            -webkit-text-stroke: 1.2px white;
+            #menuList {
+                @include box-reset-default;
+                //border: $gb-col_2-dsh-cyn;
+                list-style: none;
+                padding: 25px 0 0 25px;
+                li {
+                    @include box-reset-default;
+                    //border: $gb-col_2-dsh-cyn;
+                    a {
+                        text-decoration: none;
+                        color: inherit; 
+                    }
+                    h2 {
+                        @include box-reset-default;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        a {
+                            text-decoration: none;
+                            color: inherit; 
+                            -webkit-text-stroke: 0px white;
+                        }
+                    }
+                    #projLi {
+                        @include box-reset-default;
+                        padding-left: 25px;
+                    }
+                }
+            }
+            h2:hover {
+                color: $cyberGreen;
+                cursor: pointer;
+                -webkit-text-stroke: 1.5px $cyberGreen;
+                transition: color 0.2s ease-in-out;
+            }
+        }
+        #menuFooter {
+            @include box-reset-default;
+            //border: $gb-row_5-dsh-org;
+            height: 60px;
+            margin: 30px 30px -30px 30px;
+            overflow: hidden;
+            text-wrap: nowrap;
+            padding-left: 25px;
+            padding-bottom: 15px;
+            position: absolute;
+            bottom: 60px;
+            #followUs {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                color: white;
+                font-weight: lighter;
+                font-size: 85%;
+                align-content: end;
+            }
+            h5 {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: lighter;
+                }
+            }
+            a:hover {
+                color: $cyberGreen;
+                cursor: pointer;
+                transition: color 0.2s ease-in-out;
+            }
+            #separator:hover {
+                color: black;
+            }
+        }
+    }
+}
+#menuClosed {
+    @include box-reset-default;
+    //border: $gb-row_5-sol-org;
+    width: 0%; 
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: $cyberGreen;
+    background-color: $pastelBlue;
+    transition: width 0.5s ease-in-out 0.25s, background-color 0.25s linear;
+    overflow: hidden; 
+}
+
+@media only screen and (max-width: 768px) {
+    #menuOpen {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-org;
+        height: 100%;
+        width: 100%;
+        #menuInnerFrame {
+            @include box-reset-default;
+            border: 5px solid $cyberGreen;
+            border-radius: 10px;
+            margin: 30px;
+            clip-path: polygon(
+                0 0, 100% 0, 100% 100%, 0 100%, 0 0,
+                0 155px, 70px 155px, 70px 0, 0 0
+            );
+        }
+    }
+}
