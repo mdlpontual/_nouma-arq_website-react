@@ -8,9 +8,9 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: 100vh;
-        align-content: center;
+        align-content: end;
         justify-content: center;
-        padding: 50px;
+        padding: 150px;
         #tessSymbol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
@@ -18,7 +18,7 @@
             img {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
-                width: 300px;
+                width: 250px;
                 max-width: 100%;
             }
         }
@@ -137,6 +137,23 @@
             }
             h5 {
                 @include box-reset-default;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #contactCon {
+        #tessSymbolRow {
+            align-content: center;
+            padding: 50px;
+            #tessSymbol {
+                img {
+                    @include box-reset-default;
+                    //border: $gb-elm_2-dsh-lgr;
+                    width: 150px;
+                    max-width: 100%;
+                }
             }
         }
     }

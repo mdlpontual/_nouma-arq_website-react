@@ -46,11 +46,29 @@
                 text-align: center;
                 margin-bottom: 25px;
             }
-            p {
+            #text {
                 font-family: Helvetica, sans-serif;
                 font-weight: 400;
                 font-size: 1.1rem;
                 text-align: justify;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #aboutCon {
+        #aboutTextRow {
+            #textCol {  
+                h3 {
+                    text-align: center;
+                    margin-bottom: 25px;
+                    font-size: 1.2rem;
+                }
+                #text {
+                    font-size: 0.85rem;
+                    padding-top: 20px;
+                }
             }
         }
     }
