@@ -16,6 +16,23 @@ function Jumbotron() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [symbolSrc, setSymbolSrc] = useState(IMG.nouma_onlySymbol_white);
+  const [imgA, setImgA] = useState(currentIMG);
+  const [imgB, setImgB] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextIMG = jumboIMG[Math.floor(Math.random() * jumboIMG.length)];
+      if (activeIndex === 0) {
+        setImgB(nextIMG);
+        setActiveIndex(1);
+      } else {
+        setImgA(nextIMG);
+        setActiveIndex(0);
+      }
+    }, 15000);
+    return () => clearInterval(interval);
+  }, [activeIndex]);
 
   const handleMouseEnter = () => {
       setIsHovered(true);
@@ -38,9 +55,56 @@ function Jumbotron() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const elements = document.querySelectorAll('.fade-in-target, .fade-out-target');
+  
+    elements.forEach((el, index) => {
+      el.dataset.index = index;
+    });
+  
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains('fade-out-target')) {
+              entry.target.classList.add('fade-out-filter');
+            } else {
+              entry.target.classList.add('fade-in-up');
+            }
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0
+      }
+    );
+  
+    elements.forEach(el => observer.observe(el));
+  
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <>
-      <section id="jumboCon" className="container-fluid" style={{backgroundImage: `url(${currentIMG})`}}>
+      <section id="jumboCon" className="container-fluid">
+        <div id="jumboFilter" className="fade-out-target"></div>
+        <div id="jumboImageWrapper">
+          <img
+            className={`jumbo-img ${activeIndex === 0 ? "visible" : "hidden"}`}
+            src={imgA}
+            alt="background A"
+            loading="lazy"
+          />
+          <img
+            className={`jumbo-img ${activeIndex === 1 ? "visible" : "hidden"}`}
+            src={imgB}
+            alt="background B"
+            loading="lazy"
+          />
+        </div>
         <div id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
           {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
         </div>
