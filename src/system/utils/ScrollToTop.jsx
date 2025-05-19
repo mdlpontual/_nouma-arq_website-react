@@ -1,16 +1,20 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    const savedScrollY = sessionStorage.getItem(`scrollPosition-${pathname}`);
+    const isRefresh = performance.navigation.type === 1;
 
-    if (savedScrollY !== null) {
-      window.scrollTo(0, parseInt(savedScrollY, 10));
+    if (isRefresh) {
+      // Full page refresh detected: clear saved scroll positions
+      sessionStorage.clear();
+      window.scrollTo(0, 0);
     } else {
-      window.scrollTo(0, 0); 
+      // Normal navigation
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" }); // <-- force instantly top
+      sessionStorage.removeItem('projectAnimationsStarted'); // <-- clean animation session key
     }
 
     const handleScroll = () => {
