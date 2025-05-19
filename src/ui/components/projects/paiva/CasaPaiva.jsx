@@ -75,7 +75,7 @@ function CasaPaiva() {
               <section id="imgsCon" className="container-fluid">
                   {imgArr.map((img, i) => (
                           <div id="imgsRow" className="row" key={i}>
-                              <img id="prjIMG" className="col-auto" src={imgArr[i]} alt="imagem projeto" />
+                              <img id="prjIMG" className="col-auto" src={imgArr[i]} alt="imagem projeto" loading="lazy"/>
                           </div>
                       )
                   )}
