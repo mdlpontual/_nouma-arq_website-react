@@ -56,7 +56,7 @@ function Apto404() {
             <section id="preImgsCon" className="container-fluid">
                 <div id="preImgsRow" className="row">
                     <div id="preImgsCol" className="col-auto">
-                        <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno"  />
+                        <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno" loading="lazy" />
                     </div>
                     <div id="prjTextCol" className="col-auto">
                         <div id="prjTextElm">
@@ -70,7 +70,7 @@ function Apto404() {
             <section id="imgsCon" className="container-fluid">
                 {imgArr.map((img, i) => (
                         <div id="imgsRow" className="row" key={i}>
-                            <img id="prjIMG" className="col-auto" src={imgArr[i]} alt="imagem projeto" />
+                            <img id="prjIMG" className="col-auto" src={imgArr[i]} alt="imagem projeto" loading="lazy" />
                         </div>
                     )
                 )}
