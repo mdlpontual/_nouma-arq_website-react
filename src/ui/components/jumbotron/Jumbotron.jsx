@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../../assets/imagesHUB";
 import Menu from "./menu/Menu";
+import useFadeInOut from "../../../system/hooks/useFadeInOut";
 
 const jumboIMG = [ 
   IMG.jumbotron_00, IMG.jumbotron_01, IMG.jumbotron_02, IMG.jumbotron_03, IMG.jumbotron_04,
@@ -19,6 +20,8 @@ function Jumbotron() {
   const [imgA, setImgA] = useState(currentIMG);
   const [imgB, setImgB] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  
+  useFadeInOut(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -53,38 +56,6 @@ function Jumbotron() {
       setCurrentIMG(jumboIMG[Math.floor(Math.random() * jumboIMG.length)]);
     }, 15000);
     return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const elements = document.querySelectorAll('.fade-in-target, .fade-out-target');
-  
-    elements.forEach((el, index) => {
-      el.dataset.index = index;
-    });
-  
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            if (entry.target.classList.contains('fade-out-target')) {
-              entry.target.classList.add('fade-out-filter');
-            } else {
-              entry.target.classList.add('fade-in-up');
-            }
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0
-      }
-    );
-  
-    elements.forEach(el => observer.observe(el));
-  
-    return () => {
-      elements.forEach(el => observer.unobserve(el));
-    };
   }, []);
 
   return (
