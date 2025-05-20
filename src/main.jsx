@@ -1,7 +1,7 @@
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./system/utils/Layout.jsx"; // Import the Layout
+import Layout from "./system/utils/Layout.jsx";
 import App from "./App.jsx";
 import CasaPaiva from "./ui/components/projects/paiva/CasaPaiva.jsx";
 import SeerrambiFlats from "./ui/components/projects/serrambi/SerrambiFlats.jsx";
