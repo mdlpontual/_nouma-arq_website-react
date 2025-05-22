@@ -8,6 +8,7 @@ const IMG = {
     nouma_onlySymbol_black: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Preto/Simbolo Preto.png', import.meta.url).href,
     nouma_fullLogo_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Branco/Logo Branca.png', import.meta.url).href,
     nouma_onlyName_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Branco/Nome Branco.png', import.meta.url).href,
+    nouma_onlyNameRight_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Branco/Nome Branco Dir.png', import.meta.url).href,
     nouma_lineName_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Branco/Nome Horizontal Branco.png', import.meta.url).href,
     nouma_onlySymbol_white: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Branco/Simbolo Branco.png', import.meta.url).href,
     nouma_fullLogo_green: new URL('./IMG/00_NOUMA/Templates Design_R01/Logo/Fundo Transparente/Verde/Logo verde.png', import.meta.url).href,

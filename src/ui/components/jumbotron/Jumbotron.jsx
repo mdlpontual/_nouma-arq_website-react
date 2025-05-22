@@ -20,6 +20,7 @@ function Jumbotron() {
   const [imgA, setImgA] = useState(currentIMG);
   const [imgB, setImgB] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [nameSrc, setNameSrc] = useState(IMG.nouma_lineName_white);
   
   useFadeInOut(0);
 
@@ -67,14 +68,12 @@ function Jumbotron() {
             className={`jumbo-img ${activeIndex === 0 ? "visible" : "hidden"}`}
             src={imgA}
             alt="background A"
-            loading="lazy"
-          />
+            loading="lazy"/>
           <img
             className={`jumbo-img ${activeIndex === 1 ? "visible" : "hidden"}`}
             src={imgB}
             alt="background B"
-            loading="lazy"
-          />
+            loading="lazy"/>
         </div>
         <div id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
           {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
@@ -92,7 +91,8 @@ function Jumbotron() {
                    alt="nouma symbol and menu button"/>
             </div>
             <div id="nameRow" className="row">
-              <img id="noumaName" className="col-auto" src={IMG.nouma_lineName_white} alt="nouma name" />
+              <img id="noumaNameLine" className="col-auto" src={IMG.nouma_lineName_white} alt="nouma name" />
+              <img id="noumaNameWrap" className="col-auto" src={IMG.nouma_onlyNameRight_white} alt="nouma name" />
             </div>
           </div>
         </div>

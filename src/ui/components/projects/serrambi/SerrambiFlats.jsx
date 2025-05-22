@@ -55,7 +55,7 @@ function SeerrambiFlats() {
                 <div id="prjHeaderRow" className="row">
                     <div id="prjHeaderCol" className="col">
                         <h1 id="prjTitle">
-                        SERRAMBI FLATS
+                            SERRAMBI FLATS
                         </h1>
                     </div>
                 </div>

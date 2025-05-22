@@ -4,7 +4,7 @@
     @include box-reset-default;
     //border: $gb-row_5-sol-org;
     height: 100%;
-    width: 40%;
+    width: 50%;
     position: absolute;
     z-index: 3;
     background-color: $pastelBlue;
@@ -137,7 +137,7 @@
     overflow: hidden; 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     #menuOpen {
         @include box-reset-default;
         //border: $gb-row_5-sol-org;
