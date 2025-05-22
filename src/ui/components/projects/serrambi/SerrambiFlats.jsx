@@ -31,28 +31,29 @@ function SeerrambiFlats() {
     return (
         <>
           <header>
-              <section id="prjHeaderCon" className="container-fluid" style={{backgroundImage: `url(${imgArr[0]})`}}>
-                  <div id={isMenuOpen ? "secMenuOpen" : "secMenuClosed"} className="row">
-                      {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} currentPage={"serrambi"}/>}
-                  </div>
-                  <div id="prjMenuHeaderRow" className="row">
-                      <div id="prjMenuHeaderCol" className="col">
-                          <img id="menuIcon" 
-                               src={symbolSrc} 
-                               onMouseEnter={handleMouseEnter}
-                               onMouseLeave={handleMouseLeave}
-                               onClick={() => setIsMenuOpen(true)}
-                               alt="simbolo menu"/>
-                      </div>
-                  </div>
-                  <div id="prjHeaderRow" className="row">
-                      <div id="prjHeaderCol" className="col">
-                          <h1 id="prjTitle">
-                            SERRAMBI FLATS
-                          </h1>
-                      </div>
-                  </div>
-              </section>
+            <section id="prjHeaderCon" className="container-fluid">
+                <img id="backgroundImg" src={imgArr[0]} alt="background Serrambi" loading="lazy" />
+                <div id={isMenuOpen ? "secMenuOpen" : "secMenuClosed"} className="row">
+                    {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} currentPage={"serrambi"}/>}
+                </div>
+                <div id="prjMenuHeaderRow" className="row">
+                    <div id="prjMenuHeaderCol" className="col">
+                        <img id="menuIcon" 
+                            src={symbolSrc} 
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
+                            onClick={() => setIsMenuOpen(true)}
+                            alt="simbolo menu"/>
+                    </div>
+                </div>
+                <div id="prjHeaderRow" className="row">
+                    <div id="prjHeaderCol" className="col">
+                        <h1 id="prjTitle">
+                        SERRAMBI FLATS
+                        </h1>
+                    </div>
+                </div>
+            </section>
           </header>
           <main>
               <section id="preImgsCon" className="container-fluid">

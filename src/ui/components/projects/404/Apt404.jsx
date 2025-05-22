@@ -29,7 +29,8 @@ function Apto404() {
     return (
       <>
         <header>
-            <section id="prjHeaderCon" className="container-fluid" style={{backgroundImage: `url(${imgArr[5]})`}}>
+            <section id="prjHeaderCon" className="container-fluid">
+                <img id="backgroundImg" src={imgArr[5]} alt="background Casa Paiva" loading="lazy" />
                 <div id={isMenuOpen ? "secMenuOpen" : "secMenuClosed"} className="row">
                     {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} currentPage={"apto404"}/>}
                 </div>

@@ -12,28 +12,32 @@ function Projetos() {
                     </h1>
                 </div>
                 <div id="cardsRow" className="row">
-                    <div id="card" className="col-3" style={{backgroundImage: `url(${IMG.jumbotron_16})`}}>
+                    <div id="card" className="col-3">
+                        <img src={IMG.jumbotron_16} alt="link Casa Paiva" loading="lazy" />
                         <Link to={'/casaPaiva'}>
                             <div id="projectTitle">
                                 <h5>Casa Paiva</h5>
                             </div>
                         </Link>
                     </div>
-                    <div id="card" className="col-3" style={{backgroundImage: `url(${IMG.jumbotron_22})`}}>
+                    <div id="card" className="col-3">
+                        <img src={IMG.jumbotron_22} alt="link Serrambi" loading="lazy" />
                         <Link to={'/seerrambiFlats'}>
                             <div id="projectTitle">
                                 <h5>Serrambi Flats</h5>
                             </div>
                         </Link>
                     </div>
-                    <div id="card" className="col-3" style={{backgroundImage: `url(${IMG.jumbotron_01})`}}>
+                    <div id="card" className="col-3">
+                        <img src={IMG.jumbotron_01} alt="link Apto 404" loading="lazy" />
                         <Link to={'/apto404'}>
                             <div id="projectTitle">
                                 <h5>Apartamento 404</h5>
                             </div>
                         </Link>
                     </div>
-                    <div id="card" className="col-3" style={{backgroundImage: `url(${IMG.aurora1602_03})`}}>
+                    <div id="card" className="col-3">
+                        <img src={IMG.aurora1602_03} alt="link Aurora" loading="lazy" />
                         <Link to={'/aurora1602'}>
                             <div id="projectTitle">
                                 <h5>Aurora 1602</h5>
