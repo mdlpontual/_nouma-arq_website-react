@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import IMG from "../../../../assets/imagesHUB";
 import { Link } from "react-router-dom";
 import Menu from "./../../projects/secondary-menus/SecondaryMenu"
+import useFadeInOut from "../../../../system/hooks/useFadeInOut";
 
 const imgArr = [ IMG.paiva_01, IMG.paiva_02, IMG.paiva_03, IMG.paiva_04, IMG.paiva_05, 
     IMG.paiva_06, IMG.paiva_07, IMG.paiva_08, IMG.paiva_09, IMG.paiva_10, IMG.paiva_11, 
@@ -16,6 +17,8 @@ function CasaPaiva() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
     const [symbolSrc, setSymbolSrc] = useState(IMG.menuIcon);
+
+    useFadeInOut(0);
 
     const handleMouseEnter = () => {
         setIsHovered(true);
@@ -35,7 +38,10 @@ function CasaPaiva() {
         <>
           <header>
             <section id="prjHeaderCon" className="container-fluid">
-                <img id="backgroundImg" src={imgArr[0]} alt="background Casa Paiva" loading="lazy" />
+                <div id="jumboFilter" className="fade-out-target"></div>
+                <div id="jumboImageWrapper">
+                    <img id="backgroundImg" src={imgArr[0]} alt="background Casa Paiva" loading="lazy" />  
+                </div>
                 <div id={isMenuOpen ? "secMenuOpen" : "secMenuClosed"} className="row">
                     {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} currentPage={"paiva"}/>}
                 </div>

@@ -87,33 +87,42 @@
 #prjHeaderCon {
     @include box-reset-default;
     //border: $gb-con_5-sol-red;
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;
     height: 100vh;
     height: 100svh;
     position: relative;
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-    animation-delay: 0.5s;
-    &::before {
-        content: "";
+    background-color: rgba(0, 0, 0, 0.25);
+    #jumboFilter{
+        @include box-reset-default;
+        //border: $gb-col_5-sol-blu;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+    #jumboImageWrapper {
+        @include box-reset-default;
+        //border: $gb-col_5-sol-blu;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.2); 
-    }
-    #backgroundImg {
-        @include box-reset-default;
-        //border: $gb-elm_2-dsh-lgr;
-        position: absolute;
         z-index: -1;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 2s ease-out forwards;
+        animation-delay: 0.5s;  
+        #backgroundImg {
+            @include box-reset-default;
+            //border: $gb-elm_5-sol-grn;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     }
     #prjMenuHeaderRow {
         @include box-reset-default;
@@ -269,6 +278,30 @@
                 @include box-reset-default;
             }
         }
+    }
+}
+
+#prjHeaderCon {
+    .fade-out-target {
+        opacity: 1;
+        transition: opacity 1.5s ease-out;
+    }
+    
+    .fade-out-filter {
+        opacity: 0 !important;
+        transition: opacity 3s ease-out 1s;
+    }
+    
+    .fade-in-target {
+        opacity: 0;
+        transform: translateX(-75px);
+        transition: opacity 1.25s ease-out, transform 1.25s ease-out;
+    }
+    
+    .fade-in-up {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+        transition-delay: calc(var(--delay, 0ms));
     }
 }
 

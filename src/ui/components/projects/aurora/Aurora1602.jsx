@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import IMG from "../../../../assets/imagesHUB";
 import { Link } from "react-router-dom";
 import Menu from "./../../projects/secondary-menus/SecondaryMenu"
+import useFadeInOut from "../../../../system/hooks/useFadeInOut";
 
 const imgArr = [ IMG.aurora1602_01, IMG.aurora1602_02, IMG.aurora1602_03, IMG.aurora1602_04, IMG.aurora1602_05 ];
 
@@ -9,6 +10,8 @@ function Aurora1602() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
     const [symbolSrc, setSymbolSrc] = useState(IMG.menuIcon);
+
+    useFadeInOut(0);
 
     const handleMouseEnter = () => {
         setIsHovered(true);
@@ -28,7 +31,10 @@ function Aurora1602() {
         <>
           <header>
             <section id="prjHeaderCon" className="container-fluid">
-                <img id="backgroundImg" src={imgArr[0]} alt="background Aurora" loading="lazy" />
+                <div id="jumboFilter" className="fade-out-target"></div>
+                <div id="jumboImageWrapper">
+                    <img id="backgroundImg" src={imgArr[0]} alt="background Aurora" loading="lazy" />
+                </div>
                 <div id={isMenuOpen ? "secMenuOpen" : "secMenuClosed"} className="row">
                     {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} currentPage={"aurora"}/>}
                 </div>

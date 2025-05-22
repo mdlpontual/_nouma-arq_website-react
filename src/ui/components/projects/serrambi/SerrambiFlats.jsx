@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import IMG from "../../../../assets/imagesHUB";
 import { Link } from "react-router-dom";
 import Menu from "./../../projects/secondary-menus/SecondaryMenu"
+import useFadeInOut from "../../../../system/hooks/useFadeInOut";
 
 const imgArr = [ IMG.serrambi_01, IMG.serrambi_02, IMG.serrambi_03, IMG.serrambi_04, IMG.serrambi_05, IMG.serrambi_06, 
     IMG.serrambi_07, IMG.serrambi_08, IMG.serrambi_09, IMG.serrambi_10, IMG.serrambi_11, IMG.serrambi_12, IMG.serrambi_13, 
@@ -13,6 +14,8 @@ function SeerrambiFlats() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
     const [symbolSrc, setSymbolSrc] = useState(IMG.menuIcon);
+
+    useFadeInOut(0);
 
     const handleMouseEnter = () => {
         setIsHovered(true);
@@ -32,7 +35,10 @@ function SeerrambiFlats() {
         <>
           <header>
             <section id="prjHeaderCon" className="container-fluid">
-                <img id="backgroundImg" src={imgArr[0]} alt="background Serrambi" loading="lazy" />
+                <div id="jumboFilter" className="fade-out-target"></div>
+                <div id="jumboImageWrapper">
+                    <img id="backgroundImg" src={imgArr[0]} alt="background Serrambi" loading="lazy" />
+                </div>
                 <div id={isMenuOpen ? "secMenuOpen" : "secMenuClosed"} className="row">
                     {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} currentPage={"serrambi"}/>}
                 </div>

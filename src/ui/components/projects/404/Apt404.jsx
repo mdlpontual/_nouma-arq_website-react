@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import IMG from "../../../../assets/imagesHUB";
 import { Link } from "react-router-dom";
 import Menu from "./../../projects/secondary-menus/SecondaryMenu"
+import useFadeInOut from "../../../../system/hooks/useFadeInOut";
 
 const imgArr = [ IMG.apt404_01, IMG.apt404_02, IMG.apt404_03, IMG.apt404_04, IMG.apt404_05, IMG.apt404_06, 
     IMG.apt404_07, IMG.apt404_08, IMG.apt404_09
@@ -11,6 +12,8 @@ function Apto404() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
     const [symbolSrc, setSymbolSrc] = useState(IMG.menuIcon);
+
+    useFadeInOut(0);
 
     const handleMouseEnter = () => {
         setIsHovered(true);
@@ -30,7 +33,10 @@ function Apto404() {
       <>
         <header>
             <section id="prjHeaderCon" className="container-fluid">
-                <img id="backgroundImg" src={imgArr[5]} alt="background Casa Paiva" loading="lazy" />
+                <div id="jumboFilter" className="fade-out-target"></div>
+                <div id="jumboImageWrapper">
+                    <img id="backgroundImg" src={imgArr[5]} alt="background Casa Paiva" loading="lazy" />
+                </div>
                 <div id={isMenuOpen ? "secMenuOpen" : "secMenuClosed"} className="row">
                     {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} currentPage={"apto404"}/>}
                 </div>
