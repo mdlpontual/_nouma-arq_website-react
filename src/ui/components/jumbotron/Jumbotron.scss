@@ -4,7 +4,9 @@
     @include box-reset-default;
     //border: $gb-con_5-sol-red;
     height: 100vh;
+    height: 100svh;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.25);
     #jumboFilter{
         @include box-reset-default;
         //border: $gb-col_5-sol-blu;

@@ -8,6 +8,7 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: 100vh;
+        height: 100svh;
         align-content: end;
         justify-content: center;
         padding: 150px;
@@ -27,6 +28,7 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: 80vh;
+        height: 80svh;
         min-height: fit-content;
         display: flex;
         align-content: center;
@@ -92,6 +94,7 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: 10vh;
+        height: 10svh;
         align-content: center;
         justify-content: center;
         #followUs {

@@ -8,6 +8,7 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: 110vh;
+        height: 110svh;
         align-content: center;
         justify-content: center;
         #fullLogoCol {
@@ -25,6 +26,7 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         min-height: 110vh;
+        min-height: 110svh;
         max-height: fit-content;
         background-color: $pastelBlue;
         align-content: center;
