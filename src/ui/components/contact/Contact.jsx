@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../../assets/imagesHUB";
+import useFadeInOut from "../../../system/hooks/useFadeInOut";
 
 function Contact() {
+    useFadeInOut(0.5);
+
     return (
         <>
             <section id="contactCon" className="container-fluid">
                 <div id="tessSymbolRow" className="row">
-                    <div id="tessSymbol" className="col-auto">
+                    <div id="tessSymbol" className="col-auto fade-in-target" style={{ "--delay": `${0 * 200}ms` }}>
                         <img src={IMG.tessSymbol_black} alt="simbolo tesserato"/>
                     </div>
                 </div>

@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../../assets/imagesHUB";
 import { Link } from "react-router-dom";
+import useFadeInOut from "../../../system/hooks/useFadeInOut";
 
 function Projetos() {
+    useFadeInOut(0.5);
+
     return (
         <>
             <section id="projectsCon" className="container-fluid">
@@ -12,7 +15,7 @@ function Projetos() {
                     </h1>
                 </div>
                 <div id="cardsRow" className="row">
-                    <div id="card" className="col-3">
+                    <div id="card" className="col-3 fade-in-target" style={{ "--delay": `${0 * 150}ms` }}>
                         <img src={IMG.jumbotron_16} alt="link Casa Paiva" loading="lazy" />
                         <Link to={'/casaPaiva'}>
                             <div id="projectTitle">
@@ -20,7 +23,7 @@ function Projetos() {
                             </div>
                         </Link>
                     </div>
-                    <div id="card" className="col-3">
+                    <div id="card" className="col-3 fade-in-target" style={{ "--delay": `${1 * 150}ms` }}>
                         <img src={IMG.jumbotron_22} alt="link Serrambi" loading="lazy" />
                         <Link to={'/seerrambiFlats'}>
                             <div id="projectTitle">
@@ -28,7 +31,7 @@ function Projetos() {
                             </div>
                         </Link>
                     </div>
-                    <div id="card" className="col-3">
+                    <div id="card" className="col-3 fade-in-target" style={{ "--delay": `${2 * 150}ms` }}>
                         <img src={IMG.jumbotron_01} alt="link Apto 404" loading="lazy" />
                         <Link to={'/apto404'}>
                             <div id="projectTitle">
@@ -36,7 +39,7 @@ function Projetos() {
                             </div>
                         </Link>
                     </div>
-                    <div id="card" className="col-3">
+                    <div id="card" className="col-3 fade-in-target" style={{ "--delay": `${3 * 150}ms` }}>
                         <img src={IMG.aurora1602_03} alt="link Aurora" loading="lazy" />
                         <Link to={'/aurora1602'}>
                             <div id="projectTitle">

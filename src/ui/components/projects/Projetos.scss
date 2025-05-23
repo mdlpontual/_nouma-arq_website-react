@@ -4,13 +4,13 @@
     @include box-reset-default;
     //border: $gb-con_5-sol-red;
     height: fit-content;
+    background-color: $pastelBlue;
     #projTitleRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: 75vh;
         height: 75svh;
         background-color: $pastelBlue;
-        //border-bottom: 3px solid $cyberGreen;
         align-content: end;
         justify-content: center;
         padding: 0 25px 25px 25px;
@@ -301,6 +301,19 @@
     .fade-in-up {
         opacity: 1 !important;
         transform: translateX(0) !important;
+        transition-delay: calc(var(--delay, 0ms));
+    }
+}
+
+#projectsCon, #preImgsCon, #imgsCon {
+    .fade-in-target {
+        opacity: 0;
+        transform: translateY(75px);
+        transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+    }
+    .fade-in-up {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
         transition-delay: calc(var(--delay, 0ms));
     }
 }

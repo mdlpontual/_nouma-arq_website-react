@@ -33,7 +33,7 @@ function Menu({ setIsMenuOpen }) {
                             <h2><a href="#aboutTextRow">SOBRE</a></h2>
                         </li>
                         <li>
-                            <h2><a href="#projectsCon">PROJETOS</a></h2>
+                            <h2><a href="#projTitle">PROJETOS</a></h2>
                             <Link to={'/casaPaiva'}><h2 id="projLi">CASA PAIVA</h2></Link>
                             <Link to={'/seerrambiFlats'}><h2 id="projLi">SERRAMBI FLATS</h2></Link>
                             <Link to={'/apto404'}><h2 id="projLi">APARTAMENTO 404</h2></Link>
