@@ -284,12 +284,12 @@
 #prjHeaderCon {
     .fade-out-target {
         opacity: 1;
-        transition: opacity 1.5s ease-out;
+        transition: opacity 1.5s ease-out 5s;
     }
     
     .fade-out-filter {
         opacity: 0 !important;
-        transition: opacity 3s ease-out 1s;
+        transition: opacity 3s ease-out 2s;
     }
     
     .fade-in-target {
