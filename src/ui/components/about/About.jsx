@@ -20,7 +20,7 @@ function About() {
                             Arquitetura em Contexto
                         </h3>
                         <p id="text" className="fade-in-target" style={{ "--delay": `${3 * 100}ms` }}>
-                            NOUMA é um pequeno escritório de arquitetura situado em Recife, Pernambuco. Somos especializados em projetos residenciais e design de interiores, 
+                            NOUMA é um escritório de arquitetura situado em Recife, Pernambuco. Somos especializados em projetos residenciais e design de interiores, 
                             e nossa missão é transformar as ideias dos nossos clientes em realidade por meio da solução eficiente de problemas.<br/>
                             <br/>
                             Nosso objetivo é alcançar estética e funcionalidade ideais em cada projeto, indo além das três dimensões materiais. Gostamos de chamar isso de template "Tesserato", 
