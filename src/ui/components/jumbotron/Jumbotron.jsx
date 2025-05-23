@@ -34,7 +34,7 @@ function Jumbotron() {
         setImgA(nextIMG);
         setActiveIndex(0);
       }
-    }, 15000);
+    }, 1000);
     return () => clearInterval(interval);
   }, [activeIndex]);
 

@@ -319,6 +319,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+    #projectsCon {
+        #projTitleRow {
+            #projTitle {
+                font-size: 12vw;
+            }
+        }
+    }
     #preImgsCon {
         #preImgsRow {
             #preImgsCol {
