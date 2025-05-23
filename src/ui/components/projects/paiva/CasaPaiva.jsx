@@ -67,16 +67,16 @@ function CasaPaiva() {
           <main>
               <section id="preImgsCon" className="container-fluid">
                   <div id="preImgsRow" className="row">
-                      <div id="preImgsCol" className="col-auto fade-in-target" style={{ "--delay": `${0 * 100}ms` }}>
-                          <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno" loading="lazy" />
-                      </div>
-                      <div id="prjTextCol" className="col-auto fade-in-target" style={{ "--delay": `${2 * 100}ms` }}>
+                    <div id="preImgsCol" className="col-auto fade-in-target" style={{ "--delay": `${0 * 100}ms` }}>
+                        <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno" loading="lazy" />
+                    </div>
+                    <div id="prjTextCol" className="col-auto fade-in-target" style={{ "--delay": `${2 * 100}ms` }}>
                         <div id="prjTextElm">
                             <h4>Residência na praia do Paiva - Pernambuco</h4>
                             <h4>530m²</h4>
                             <h4>2018-2023</h4>
                         </div>
-                      </div>
+                    </div>
                   </div>
               </section>
               <section id="imgsCon" className="container-fluid">

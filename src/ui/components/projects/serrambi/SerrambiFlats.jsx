@@ -64,21 +64,26 @@ function SeerrambiFlats() {
           <main>
               <section id="preImgsCon" className="container-fluid">
                   <div id="preImgsRow" className="row">
-                      <div id="preImgsCol" className="col-auto">
-                          <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno" loading="lazy" />
-                      </div>
-                      <div id="prjTextCol" className="col-auto">
+                    <div id="preImgsCol" className="col-auto fade-in-target" style={{ "--delay": `${0 * 100}ms` }}>
+                        <img id="miniTessSymb" src={IMG.tessSymbol_black} alt="simbolo tesserato pequeno" loading="lazy" />
+                    </div>
+                    <div id="prjTextCol" className="col-auto fade-in-target" style={{ "--delay": `${2 * 100}ms` }}>
                         <div id="prjTextElm">
                             <h4>Flats na praia de Serrambi - Pernambuco</h4>
                             <h4>2018</h4>
                         </div>
-                      </div>
+                    </div>
                   </div>
               </section>
               <section id="imgsCon" className="container-fluid">
                   {imgArr.map((img, i) => (
                           <div id="imgsRow" className="row" key={i}>
-                              <img id="prjIMG" className="col-auto" src={imgArr[i]} alt="imagem projeto" loading="lazy"/>
+                              <img id="prjIMG" 
+                                   className="col-auto fade-in-target" 
+                                   style={{ "--delay": `${0 * 100}ms` }} 
+                                   src={imgArr[i]} 
+                                   alt="imagem projeto" 
+                                   loading="lazy"/>
                           </div>
                       )
                   )}
