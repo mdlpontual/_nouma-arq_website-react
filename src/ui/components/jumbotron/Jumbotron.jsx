@@ -157,7 +157,7 @@ function Jumbotron() {
         });
         setActiveIndex(inactiveIndex);
       };
-    }, 1000); // or 1000 for testing
+    }, 15000); // or 1000 for testing
 
     return () => clearInterval(interval);
   }, [activeIndex, images]);
