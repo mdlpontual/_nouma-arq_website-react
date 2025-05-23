@@ -20,23 +20,26 @@ function Jumbotron() {
   const [imgA, setImgA] = useState(currentIMG);
   const [imgB, setImgB] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [nameSrc, setNameSrc] = useState(IMG.nouma_lineName_white);
   
   useFadeInOut(0);
 
   useEffect(() => {
+    let localIndex = 0;
     const interval = setInterval(() => {
       const nextIMG = jumboIMG[Math.floor(Math.random() * jumboIMG.length)];
-      if (activeIndex === 0) {
+      if (localIndex === 0) {
         setImgB(nextIMG);
         setActiveIndex(1);
+        localIndex = 1;
       } else {
         setImgA(nextIMG);
         setActiveIndex(0);
+        localIndex = 0;
       }
-    }, 1000);
+    }, 15000); // Adjust as needed
+
     return () => clearInterval(interval);
-  }, [activeIndex]);
+  }, []);
 
   const handleMouseEnter = () => {
       setIsHovered(true);
