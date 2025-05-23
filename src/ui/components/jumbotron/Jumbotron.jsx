@@ -12,21 +12,29 @@ const jumboIMG = [
   IMG.jumbotron_25, IMG.jumbotron_26, IMG.jumbotron_27, IMG.jumbotron_28, IMG.jumbotron_29,
 ];
 
+function getRandomImg(exclude) {
+  let img;
+  do {
+    img = jumboIMG[Math.floor(Math.random() * jumboIMG.length)];
+  } while (img === exclude);
+  return img;
+}
+
 function Jumbotron() {
-  const [currentIMG, setCurrentIMG] = useState(jumboIMG[Math.floor(Math.random() * jumboIMG.length)]);
+  const [imgA, setImgA] = useState(() => jumboIMG[Math.floor(Math.random() * jumboIMG.length)]);
+  const [imgB, setImgB] = useState(() => getRandomImg(imgA));
+  const [activeIndex, setActiveIndex] = useState(0);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [symbolSrc, setSymbolSrc] = useState(IMG.nouma_onlySymbol_white);
-  const [imgA, setImgA] = useState(currentIMG);
-  const [imgB, setImgB] = useState(null);
-  const [activeIndex, setActiveIndex] = useState(0);
-  
+
   useFadeInOut(0);
 
   useEffect(() => {
     let localIndex = 0;
     const interval = setInterval(() => {
-      const nextIMG = jumboIMG[Math.floor(Math.random() * jumboIMG.length)];
+      const nextIMG = getRandomImg(localIndex === 0 ? imgA : imgB);
       if (localIndex === 0) {
         setImgB(nextIMG);
         setActiveIndex(1);
@@ -36,32 +44,25 @@ function Jumbotron() {
         setActiveIndex(0);
         localIndex = 0;
       }
-    }, 15000); // Adjust as needed
+    }, 15000); // adjust interval as needed
 
     return () => clearInterval(interval);
-  }, []);
+  }, [imgA, imgB]);
 
   const handleMouseEnter = () => {
-      setIsHovered(true);
-      setTimeout(() => {
-          setSymbolSrc(IMG.nouma_onlySymbol_green);
-      }, 100); // Slight delay for smooth transition
+    setIsHovered(true);
+    setTimeout(() => {
+      setSymbolSrc(IMG.nouma_onlySymbol_green);
+    }, 100);
   };
 
   const handleMouseLeave = () => {
-      setIsHovered(false);
-      setTimeout(() => {
-          setSymbolSrc(IMG.nouma_onlySymbol_white);
-      }, 100); // Slight delay for smooth transition
+    setIsHovered(false);
+    setTimeout(() => {
+      setSymbolSrc(IMG.nouma_onlySymbol_white);
+    }, 100);
   };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIMG(jumboIMG[Math.floor(Math.random() * jumboIMG.length)]);
-    }, 15000);
-    return () => clearInterval(interval);
-  }, []);
-
+  
   return (
     <>
       <section id="jumboCon" className="container-fluid">
@@ -70,13 +71,11 @@ function Jumbotron() {
           <img
             className={`jumbo-img ${activeIndex === 0 ? "visible" : "hidden"}`}
             src={imgA}
-            alt="background A"
-            loading="lazy"/>
+            alt="background A"/>
           <img
             className={`jumbo-img ${activeIndex === 1 ? "visible" : "hidden"}`}
             src={imgB}
-            alt="background B"
-            loading="lazy"/>
+            alt="background B"/>
         </div>
         <div id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
           {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
