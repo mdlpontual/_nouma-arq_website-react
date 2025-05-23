@@ -22,7 +22,7 @@ function Menu({ setIsMenuOpen }) {
             <menu id="menuCol" className="col">
                 <div id="menuSymb" className="row">
                     <img id="menuNomaSymbol" 
-                        className="col-auto btn" 
+                        className="col-auto" 
                         src={IMG.nouma_onlySymbol_green} 
                         onClick={() => setIsMenuOpen(false)}
                         alt="nouma symbol and menu button" />

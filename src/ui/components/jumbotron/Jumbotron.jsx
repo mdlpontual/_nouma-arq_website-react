@@ -83,7 +83,7 @@ function Jumbotron() {
           <div id="jumboInnerLogo" className="col">
             <div id="symbRow" className="row">
               <img id="nomaSymbol" 
-                   className="col-auto btn" 
+                   className="col-auto" 
                    src={symbolSrc}
                    onMouseEnter={handleMouseEnter}
                    onMouseLeave={handleMouseLeave}

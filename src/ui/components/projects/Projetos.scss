@@ -3,12 +3,12 @@
 #projectsCon {
     @include box-reset-default;
     //border: $gb-con_5-sol-red;
-    height: 100vh;
-    height: 100svh;
+    height: fit-content;
     #projTitleRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 25%;
+        height: 75vh;
+        height: 75svh;
         background-color: $pastelBlue;
         //border-bottom: 3px solid $cyberGreen;
         align-content: end;
@@ -17,7 +17,7 @@
         #projTitle {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
-            font-size: 9vw;
+            font-size: 7vw;
             -webkit-text-stroke: 1.2px white;
             overflow: hidden;
         }
@@ -25,7 +25,8 @@
     #cardsRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 75%;
+        height: 80vh;
+        height: 80svh;
         #card {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
@@ -132,7 +133,7 @@
         z-index: 2;
         align-content: end;
         justify-content: center;
-        padding: 30px;
+        padding: 50px;
         #prjMenuHeaderCol {
             @include box-reset-default;
             //border: $gb-elm_5-sol-grn;
@@ -142,7 +143,7 @@
             #menuIcon {
                 @include box-reset-default;
                 //border: $gb-elm_5-sol-lgr;
-                height: 50px;
+                height: 30px;
                 cursor: pointer;
             }
         }
@@ -158,20 +159,20 @@
         #prjHeaderCol {
             @include box-reset-default;
             border-bottom: 5px solid white;
-            margin: 30px;
+            margin: 0px 50px 30px 50px;
             align-content: end;
-            justify-items: center;
-            padding-bottom: 20px;
+            justify-items: end;
+            padding-bottom: 0px;
             opacity: 0;
             animation: fadeIn 1.5s ease-out forwards;
             #prjTitle {
                 @include box-reset-default;
                 //border: $gb-elm_5-sol-lgr;
                 width: fit-content;
-                font-size: 12vh;
+                font-size: 10vh;
                 opacity: 0;
                 animation: fadeIn 3s ease-out forwards;
-                text-align: center;
+                text-align: end;
             }
         }
     }
@@ -198,7 +199,7 @@
             #miniTessSymb {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
-                height: 200px;
+                height: 150px;
             }
         }
         #prjTextCol {
@@ -209,7 +210,6 @@
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
                 border-left: 2px solid black;
-                border-right: 2px solid black;
                 padding: 15px;
                 h4{ 
                     color: black;
@@ -321,6 +321,17 @@
                     height: 175px;
                 }
             }
+            #prjTextCol {
+                @include box-reset-default;
+                //border: $gb-col_5-sol-blu;
+                align-content: center;
+                #prjTextElm {
+                    @include box-reset-default;
+                    //border: $gb-elm_2-dsh-lgr;
+                    border-left: 0px solid black;
+                    text-align: center;
+                }
+            }
         }
     }
     #imgsCon {
@@ -334,7 +345,7 @@
                 #menuIcon {
                     @include box-reset-default;
                     //border: $gb-elm_5-sol-lgr;
-                    height: 35px;
+                    height: 30px;
                     cursor: pointer;
                 }
             }
@@ -345,6 +356,21 @@
             #prjHeaderCol {
                 #prjTitle {
                     font-size: 7vh;
+                    justify-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #prjHeaderCon {
+        #prjHeaderRow {
+            #prjHeaderCol {
+                #prjTitle {
+                    justify-items: center;
+                    text-align: center;
                 }
             }
         }

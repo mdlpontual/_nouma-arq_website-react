@@ -13,25 +13,25 @@ function Contact() {
                 <div id="contactsRow" className="row">
                     <div id="adressCol" className="col-auto">
                         <img src={IMG.placeIcon} alt="adress tag"/>
-                        <h5>Recife, Pernambuco </h5>
-                        <h5>Brasil</h5>
+                        <h6>Recife, Pernambuco </h6>
+                        <h6>Brasil</h6>
                     </div>
                     <div id="phoneCol" className="col-auto">
                         <img src={IMG.phoneIcon} alt="phone number"/>
-                        <h5>+55 (81) 9.8180.5440</h5>
+                        <h6>+55 (81) 9.8180.5440</h6>
                     </div>
                     <div id="emailCol" className="col-auto">
                         <img src={IMG.letterIcon} alt="email"/>
-                        <h5>projetos@nouma.com.br</h5>
+                        <h6>projetos@nouma.com.br</h6>
                     </div>
                 </div>
                 <div id="followRow" className="row">
-                    <h5 id="followUs">follow us:</h5>
-                    <h5>
+                    <h6 id="followUs">follow us:</h6>
+                    <h6>
                         <a href="https://www.instagram.com/noumaarquitetura/">Instagram </a>
                         <a id="separator">|</a>
                         <a href="https://br.pinterest.com/noumaarquitetura/"> Pinterest</a>
-                    </h5>
+                    </h6>
                 </div>
                 <div id="footerRow" className="row">
                     <div id="footerCol" className="col-auto">

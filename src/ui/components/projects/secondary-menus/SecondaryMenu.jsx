@@ -22,7 +22,7 @@ function Menu({ setIsMenuOpen, currentPage }) {
             <menu id="secMenuCol" className="col">
                 <div id="secMenuSymb" className="row">
                     <img id="secMenuNomaSymbol" 
-                        className="col-auto btn" 
+                        className="col-auto" 
                         src={IMG.menuYellowIcon} 
                         onClick={() => setIsMenuOpen(false)}
                         alt="nouma symbol and menu button" />

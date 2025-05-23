@@ -58,7 +58,7 @@ function CasaPaiva() {
                 <div id="prjHeaderRow" className="row">
                     <div id="prjHeaderCol" className="col">
                         <h1 id="prjTitle">
-                        CASA PAIVA
+                            CASA PAIVA
                         </h1>
                     </div>
                 </div>

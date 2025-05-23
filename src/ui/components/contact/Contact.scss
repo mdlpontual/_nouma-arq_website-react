@@ -19,7 +19,7 @@
             img {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
-                width: 250px;
+                width: 175px;
                 max-width: 100%;
             }
         }
@@ -44,10 +44,10 @@
             img {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
-                height: 100px;
+                height: 75px;
                 padding: 10px;
             }
-            h5 {
+            h6 {
                 //border: $gb-elm_2-dsh-lgr;
                 bottom: 0px;
             }
@@ -63,10 +63,10 @@
             img {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
-                height: 100px;
+                height: 75px;
                 padding: 10px;
             }
-            h5 {
+            h6 {
                 //border: $gb-elm_2-dsh-lgr;
                 bottom: 0px;
             }
@@ -82,9 +82,9 @@
             img {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
-                height: 100px;
+                height: 75px;
             }
-            h5 {
+            h6 {
                 //border: $gb-elm_2-dsh-lgr;
                 bottom: 0px;
             }
@@ -105,7 +105,7 @@
             font-size: 1rem;
             padding-bottom: 5px;
         }
-        h5 {
+        h6 {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
             color: black;
@@ -138,7 +138,7 @@
                 @include box-reset-default;
                 font-weight: 700;
             }
-            h5 {
+            h6 {
                 @include box-reset-default;
             }
         }
